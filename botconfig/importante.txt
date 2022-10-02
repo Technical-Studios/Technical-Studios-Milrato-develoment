@@ -1,4 +1,6 @@
-Haca tendras que cambiar los siguientes emojis remplazandolos todos globalmente para que no tengas errores es recomendable descargarlos en esta pagina https://cdn.discordapp.com/emojis/(COLOCAR_ID_DE_EMOJI).png dentro de esta web podras descargar estos emojis y remplazarlos y obtenerlos para que se los agrege asu bot:
+Haca tendras que cambiar los siguientes emojis remplazandolos todos globalmente para que no tengas errores es recomendable
+descargarlos en esta pagina https://cdn.discordapp.com/emojis/(COLOCAR_ID_DE_EMOJI).png dentro de esta web podras descargar
+estos emojis y remplazarlos y obtenerlos para que se los agrege asu bot:
 
 Si y no
 <a:yes:833101995723194437>

@@ -138,7 +138,7 @@ module.exports = {
           else disabled++;
           client.settings.set(message.guild.id, !oldstate, `${value.toUpperCase()}`)
         }
-        b?.reply(`<a:yes:833101995723194437> **\`Enabled ${enabled} Command-Categories\` and \`Disabled ${disabled} Command-Categories\` out of \`${b?.values.length} selected Command-Categories\`**`)
+        b?.reply(`✅ **\`Enabled ${enabled} Command-Categories\` and \`Disabled ${disabled} Command-Categories\` out of \`${b?.values.length} selected Command-Categories\`**`)
       })
       collector.on('end', collected => {
         msg.edit({content: ":x: Time ran out/Input finished! Cancelled", embeds: [
@@ -167,17 +167,17 @@ module.exports = {
  */
 function getNumberEmojis() {
   return [
-    "<:Number_0:843943149915078696>",
-    "<:Number_1:843943149902626846>",
-    "<:Number_2:843943149868023808>",
-    "<:Number_3:843943149914554388>",
-    "<:Number_4:843943149919535154>",
-    "<:Number_5:843943149759889439>",
-    "<:Number_6:843943150468857876>",
-    "<:Number_7:843943150179713024>",
-    "<:Number_8:843943150360068137>",
-    "<:Number_9:843943150443036672>",
-    "<:Number_10:843943150594031626>",
+    "0️⃣",
+    "1️⃣",
+    "2️⃣",
+    "3️⃣",
+    "4️⃣",
+    "5️⃣",
+    "6️⃣",
+    "7️⃣",
+    "8️⃣",
+    "9️⃣",
+    "🔟",
     "<:Number_11:893173642022748230>",
     "<:Number_12:893173642165383218>",
     "<:Number_13:893173642274410496>",

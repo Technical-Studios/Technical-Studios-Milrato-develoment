@@ -53,9 +53,9 @@ module.exports = {
           dynamic: true
         }), "https://team.aracdes.ga/discord")
         .setColor(es.color).setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
-        .addField("<:arrow:832598861813776394> PNG", `[\`LINK\`](${user.displayAvatarURL({format: "png"})})`, true)
-        .addField("<:arrow:832598861813776394> JPEG", `[\`LINK\`](${user.displayAvatarURL({format: "jpg"})})`, true)
-        .addField("<:arrow:832598861813776394> WEBP", `[\`LINK\`](${user.displayAvatarURL({format: "webp"})})`, true)
+        .addField("📌 PNG", `[\`LINK\`](${user.displayAvatarURL({format: "png"})})`, true)
+        .addField("📌 JPEG", `[\`LINK\`](${user.displayAvatarURL({format: "jpg"})})`, true)
+        .addField("📌 WEBP", `[\`LINK\`](${user.displayAvatarURL({format: "webp"})})`, true)
         .setURL(user.displayAvatarURL({
           dynamic: true
         }))

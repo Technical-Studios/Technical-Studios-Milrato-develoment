@@ -261,31 +261,44 @@ module.exports = {
           .setMinValues(1)
           .setMaxValues(5)
           .addOptions(menuOptions.filter(Boolean))
-        let buttonRow = new MessageActionRow().addComponents([button_back, button_home, button_forward, button_tutorial])
+          let buttonRow = new MessageActionRow().addComponents([button_back, button_home, button_forward, button_tutorial])
         let SelectionRow = new MessageActionRow().addComponents([menuSelection])
-        const allbuttons = [buttonRow, SelectionRow]
+        const allbuttons = [/*buttonRow,*/ SelectionRow]
+
         //define default embed
-        let OverviewEmbed = new MessageEmbed()
-          .setColor(es.color).setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
-          //.setFooter("Page Overview\n"+ client.user.username, client.user.displayAvatarURL())
-          .setFooter({ text: "Page Overview\n" + client.user.username, iconURL: client.user.displayAvatarURL() })
-          .setTitle(`Information about __${client.user.username}__`)
-          .addField(":muscle: **__My Features__**",
-            `>>> **58+ Systems**, like: <:twitter:840255600851812393> **Twitter-** & 🔴 **Youtube-Auto-Poster** 
-**Application-**, Ticket-, **Welcome-Images-** and Reaction Role-, ... Systems
-:notes: An advanced 🟢 **Music System** with **Audio Filtering**
-:video_game: Many **Minigames** and :joystick: **Fun** Commands (150+)
-:no_entry_sign: **Administration** and **Auto-Moderation** and way much more!`)
-          .addField(":question: **__How do you use me?__**",
-            `>>> \`${prefix}setup\` and react with the Emoji for the right action,
-but you can also do \`${prefix}setup-SYSTEM\` e.g. \`${prefix}setup-welcome\``)
-          .addField(":chart_with_upwards_trend: **__STATS:__**",
-            `>>> :gear: **${client.commands.map(a => a).length} Commands**
-:file_folder: on **${client.guilds.cache.size} Guilds**
-⌚️ **${duration(client.uptime).map(i => `\`${i}\``).join("︲")} Uptime**
-📶 **\`${Math.floor(client.ws.ping)}ms\` Ping**
-👑  Made by [**Milrato Development**](https://team.aracdes.ga/discord)`)
-          .addField("How to get help?", `>>> **\` 1. Way \`** *Use the Buttons, to swap the Pages*\n**\` 2. Way \`** *Use the Menu to select all Help Pages, you want to display*\n**\` 3. Way \`** *Watch the Youtube Tutorial*`)
+let OverviewEmbed = new MessageEmbed()
+.setColor(es.color)//.setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
+//.setFooter("Page Overview\n"+ client.user.username, client.user.displayAvatarURL())
+.setFooter({ text: "Page Overview\n" + client.user.username, iconURL: client.user.displayAvatarURL() })
+.setTitle(`Commands of ${client.user.username}`)
+.addField("» Menú Help",
+`We have \`18\` categories and \`${client.commands.map(a => a).length}\` commands for browsing.
+
+Command list: \`${prefix}help <category>\`
+Command detail: \`${prefix}help <command>\``)
+.addField("» Categories",`
+\`${prefix}help information\` ∷ 🔰 Infotmation∷ 
+\`${prefix}help economy\` ∷ 💸 Economy
+\`${prefix}help school\` ∷ 🏫 School
+\`${prefix}help music\` ∷ 🎶 Music
+\`${prefix}help filter\` ∷ 👀 Music filter
+\`${prefix}help customqueue\` ∷ ⚜️ Customqueue
+\`${prefix}help admin\` ∷ 🚫 Administrations
+\`${prefix}help setup\` ∷ 💪 Setups
+\`${prefix}help settings\` ∷ ⚙️ Settings
+\`${prefix}help owner\` ∷ 👑 Developers
+\`${prefix}help programming\` ∷ ⌨️ Programming
+\`${prefix}help ranking\` ∷ 📈 Rank
+\`${prefix}help soundboard\` ∷ 🔊 Soundboard
+\`${prefix}help voice\` ∷ 🎤 Voice
+\`${prefix}help fun\` ∷ 🕹️ Fun
+\`${prefix}help minigames\` ∷ 🎮 Games
+\`${prefix}help anime\` ∷ 😳 Anime
+\`${prefix}help nsfw\` ∷ 🔞 Nsfw
+\`${prefix}help customcommands\` ∷ 🦾 Custom-Commands`)
+
+.addField("» Helpful Links",
+`[website](https://team.aracades.ga/) | [Privacy](https://team.aracades.ga/) | [Support](https://team.aracades.ga/discord) | [Poll](https://team.aracades.ga/)`)
 
         let err = false;
         //Send message with buttons
@@ -386,8 +399,8 @@ but you can also do \`${prefix}setup-SYSTEM\` e.g. \`${prefix}setup-welcome\``)
 
         collector.on('end', collected => {
           //array of all disabled buttons
-          let d_buttonRow = new MessageActionRow().addComponents([button_back.setDisabled(true), button_home.setDisabled(true), button_forward.setDisabled(true), button_tutorial])
-          const alldisabledbuttons = [d_buttonRow]
+       //   let d_buttonRow = new MessageActionRow().addComponents([button_back.setDisabled(true), button_home.setDisabled(true), button_forward.setDisabled(true), button_tutorial])
+        //  const alldisabledbuttons = [d_buttonRow]
           if (!edited) {
             edited = true;
             helpmsg.edit({ content: handlemsg(client.la[ls].cmds.info.help.timeended, { prefix: prefix }), embeds: [helpmsg.embeds[0]], components: alldisabledbuttons }).catch((e) => { })

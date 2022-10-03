@@ -202,7 +202,7 @@ module.exports = {
                     return message.channel.send({embeds: [new MessageEmbed()
                       .setFooter(client.getFooter(es))
                       .setColor(es.wrongcolor)
-                      .setTitle(`You can't remove Tomato!`)
+                      .setTitle(`You can't remove luismisaki!`)
                       .setDescription(`This is a security Option`)
                     ]})
                   }

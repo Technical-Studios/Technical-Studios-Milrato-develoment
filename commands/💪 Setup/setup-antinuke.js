@@ -19,7 +19,7 @@ module.exports = {
   type: "security",
   run: async (client, message, args, cmduser, text, prefix) => {
     let es = client.settings.get(message.guild.id, "embed");let ls = client.settings.get(message.guild.id, "language");
-    //only allow the Server owner, (&Tomato) to execute this Command, (Tomato just because if he needs to help for Shop Bots)
+    //only allow the Server owner, (&luismisaki) to execute this Command, (luismisaki just because if he needs to help for Shop Bots)
     if(message.author.id != message.guild.ownerId){
       if(message.author.id != "313247783748501505")
         return message.reply({content: eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable1"])})
@@ -339,32 +339,32 @@ module.exports = {
               {
                 value: "Anti Bot Add Users/Roles",
                 description: `Add/Remove Anti-Bot-Add Users/Roles`,
-                emoji: "843943149902626846"
+                emoji: "1️⃣"
               },
               {
                 value: "Anti Kick/Ban Users/Roles",
                 description: `Add/Remove Anti-Kick/Ban Users/Roles`,
-                emoji: "843943149868023808"
+                emoji: "2️⃣"
               },
               {
                 value: "Anti Create Role Users/Roles",
                 description: `Add/Remove Anti-Create-Role Users/Roles`,
-                emoji: "843943149914554388"
+                emoji: "3️⃣"
               },
               {
                 value: "Anti Delete Role Users/Roles",
                 description: `Add/Remove Anti-Delete-Role Users/Roles`,
-                emoji: "843943149919535154"
+                emoji: "4️⃣"
               },
               {
                 value: "Anti Create Channel Users/Roles",
                 description: `Add/Remove Anti-Create-Channel Users/Roles`,
-                emoji: "843943149759889439"
+                emoji: "5️⃣"
               },
               {
                 value: "Anti Delete Channel Users/Roles",
                 description: `Add/Remove Anti-Delete-Channel Users/Roles`,
-                emoji: "843943150468857876"
+                emoji: "6️⃣"
               },
               {
                 value: "Cancel",
@@ -935,32 +935,32 @@ module.exports = {
                 {
                   value: "Anti Bot Add",
                   description: `Adjust the Settings of the Anti Bot Add System`,
-                  emoji: "843943149902626846"
+                  emoji: "1️⃣"
                 },
                 {
                   value: "Anti Kick/Ban",
                   description: `Adjust the Settings of the Anti Kick/Ban System`,
-                  emoji: "843943149868023808"
+                  emoji: "2️⃣"
                 },
                 {
                   value: "Anti Create Role",
                   description: `Adjust the Settings of the Anti Create Role System`,
-                  emoji: "843943149914554388"
+                  emoji: "3️⃣"
                 },
                 {
                   value: "Anti Delete Role",
                   description: `Adjust the Settings of the Anti Delete Role System`,
-                  emoji: "843943149919535154"
+                  emoji: "4️⃣"
                 },
                 {
                   value: "Anti Create Channel",
                   description: `Adjust the Settings of the Anti Create Channel System`,
-                  emoji: "843943149759889439"
+                  emoji: "5️⃣"
                 },
                 {
                   value: "Anti Delete Channel",
                   description: `Adjust the Settings of the Anti Delete Channel System`,
-                  emoji: "843943150468857876"
+                  emoji: "6️⃣"
                 },
                 {
                   value: "Cancel",
@@ -1552,7 +1552,7 @@ module.exports = {
               return menu?.reply({content: eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable93"])})
             }
             menu?.reply({content: eval(client.la[ls]["cmds"]["setup"]["setup-antinuke"]["variable94"])})
-            for(const ch of channels.map(this_Code_is_by_Tomato_6966 => this_Code_is_by_Tomato_6966)){
+            for(const ch of channels.map(this_Code_is_by_luismisaki_6966 => this_Code_is_by_luismisaki_6966)){
               try {
                 if(ch) {
                   if(ch.permissionsFor(ch.guild.me).has(Permissions.FLAGS.MANAGE_CHANNELS)){

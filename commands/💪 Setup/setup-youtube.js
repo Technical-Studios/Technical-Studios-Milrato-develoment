@@ -157,7 +157,7 @@ module.exports = {
           var tempmsg = await message.reply({embeds: [new Discord.MessageEmbed()
             .setTitle(eval(client.la[ls]["cmds"]["setup"]["setup-youtube"]["variable10"]))
             .setColor(es.color)
-            .setDescription(`Example:\nhttps://www.youtube.com/channel/UC1AgotpFHNhzolUtAjPgZqQ`)
+            .setDescription(`Example:\nhttps://www.youtube.com/channel/UCgGCfLSWYbobojj58MQ0FWA`)
             .setFooter(client.getFooter(es))]
           })
           await tempmsg.channel.awaitMessages({filter: m => m.author.id === message.author.id,
@@ -169,7 +169,7 @@ module.exports = {
               var msg = collected.first();
               if(msg && msg.content ){
                 if((msg.content.length > 0 && msg.content.length < 50) &&!msg.content.toLowerCase().includes("youtube") && (!msg.content.toLowerCase().includes("channel") || !msg.content.toLowerCase().includes("c")))
-                  return message.reply("YOU DID NOT SEND A VALID YOUTUBE CHANNEL\nNote, such links doesn't work: `https://youtube.com/Truchorko5566` / `https://youtube.com/c/Truchorko5566`\nIt must be something like this: `https://www.youtube.com/channel/UC1AgotpFHNhzolUtAjPgZqQ`")
+                  return message.reply("YOU DID NOT SEND A VALID YOUTUBE CHANNEL\nNote, such links doesn't work: `https://youtube.com/Elgranequipobro` / `https://youtube.com/c/Elgranequipobro`\nIt must be something like this: `https://www.youtube.com/channel/UCgGCfLSWYbobojj58MQ0FWA`")
                 if(client.social_log.get(message.guild.id, "youtube.channels").includes(msg.content))
                   return message.reply({embeds: [new Discord.MessageEmbed()
                     .setTitle(eval(client.la[ls]["cmds"]["setup"]["setup-youtube"]["variable11"]))

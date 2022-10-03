@@ -21,14 +21,14 @@ module.exports = (client) => {
   client.cooldowns = new Discord.Collection(); //an collection for cooldown commands of each user
   client.getInvite = async (id) => {
     if (!id || id.length != 18) return "INVALID CHANNELID";
-    let ch = await client.channels.fetch("802914917874663454").catch(() => { })
-    if (!ch) return `COULD NOT CREATE INVITE FOR: <#802914917874663454> in **${ch.guild.name}**`
+    let ch = await client.channels.fetch("1023011914336444486").catch(() => { })
+    if (!ch) return `COULD NOT CREATE INVITE FOR: <#1023011914336444486> in **${ch.guild.name}**`
     if (!ch.permissionsFor(ch.guild.me).has(Discord.Permissions.FLAGS.CREATE_INSTANT_INVITE)) {
       return `:x: **I am missing the CREATE_INSTANT_INVITE PERMISSION for \`${ch.name}\`**`
     }
     let inv = await ch.createInvite();
-    if (!inv) return `COULD NOT CREATE INVITE FOR: <#802914917874663454> in **${ch.guild.name}**`
-    return `<#802914917874663454> | discord.gg/${inv.code}`
+    if (!inv) return `COULD NOT CREATE INVITE FOR: <#1023011914336444486> in **${ch.guild.name}**`
+    return `<#1023011914336444486> | discord.gg/${inv.code}`
   }
   /**
    * @INFO

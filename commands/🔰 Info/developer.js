@@ -9,7 +9,7 @@ const { handlemsg } = require(`${process.cwd()}/handlers/functions`)
 module.exports = {
 	name: "developer",
 	category: "🔰 Info",
-	aliases: ["dev", "tomato"],
+	aliases: ["dev", "luismisaki"],
 	description: "Shows Information about the Developer",
 	usage: "developer",	
 	type: "bot",

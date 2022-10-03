@@ -123,4 +123,4 @@ Nuestra [**Comunidad**](https://team.arcades.ga/discord) de discord nos nedicamo
 # Créditos
 
 > Si consideras usar este Bot, ¡asegúrate de darme crédito!
-> Ejemplo: `Bot creado por [Team_Arcades](https://team.arcades.ga/discord) pero modificado por [modifier/tu nombre](https://discord.gg/)`
+> Ejemplo: `Bot creado por [Team_Arcades](https://team.arcades.ga/discord) pero modificado por [modificador/tu nombre](https://discord.gg/)`

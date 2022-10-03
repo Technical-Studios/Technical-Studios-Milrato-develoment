@@ -19,7 +19,7 @@ Nuestra [**Comunidad**](https://team.arcades.ga/discord) de discord nos dedicamo
 
   * [nodejs](https://nodejs.org) versión 16.6 o superior, recomiendo la última versión STABLE
   * [python](https://python.org) versión 3.8 o superior, para instalar la base de datos `enmap` (better-sqlite3)
-  * Se recomienda un VPS, por lo que no necesita mantener su PC/portátil/RasPi en línea las 24 horas del día, los 7 días de la semana. [Haga clic aquí para una configuración de Debian] (https://github.com/Tomato6966/Debian-Cheat-Sheet-Setup/wiki/).
+  * Se recomienda un VPS, por lo que no necesita mantener su PC/portátil/RasPi en línea las 24 horas del día, los 7 días de la semana. [Haga clic aquí para una configuración de Debian](https://github.com/Tomato6966/Debian-Cheat-Sheet-Setup/wiki/).
   
 </details>
 

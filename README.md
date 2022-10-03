@@ -47,33 +47,33 @@ Nuestra [**Comunidad**](https://team.arcades.ga/discord) de discord nos dedicamo
   5. Las configuraciones como **contraseña** en application.yml y **puerto** deben proporcionarse en `botconfig/config.json` del Bot
      * Si usó la configuración predeterminada, entonces no se necesitan ajustes y debería verse así:
      ```json
-    {
-        "clientsettings": {
-            "nodes": [
-                {
-                    "host": "localhost",
-                    "port": 2333,
-                    "password": "youshallnotpass"
-                }
-            ]
+        {
+            "clientsettings": {
+                "nodes": [
+                    {
+                        "host": "localhost",
+                        "port": 2333,
+                        "password": "youshallnotpass"
+                    }
+                ]
+            }
         }
-    }
      ```
   6. ¿No desea alojar su propio LavaLink?
      * [¡Aquí hay una lista de muchos servidores LavaLink de uso gratuito!] (https://lavalink.darrennathanael.com/#how2host)
      * O simplemente usa algo como esto:
      ```json
-     {
-        "clientsettings": {
-            "nodes": [
-                {
-                    "host": "lava.link",
-                    "port": 80,
-                    "password": "Team_Arcades"
-                }
-            ]
+        {
+            "clientsettings": {
+                "nodes": [
+                    {
+                        "host": "lava.link",
+                        "port": 80,
+                        "password": "Team_Arcades"
+                    }
+                ]
+            }
         }
-    }
      ```
 
 </details>

@@ -60,7 +60,7 @@ Nuestra [**Comunidad**](https://team.arcades.ga/discord) de discord nos dedicamo
         }
      ```
   6. ¿No desea alojar su propio LavaLink?
-     * [¡Aquí hay una lista de muchos servidores LavaLink de uso gratuito!] (https://lavalink.darrennathanael.com/#how2host)
+     * [¡Aquí hay una lista de muchos servidores LavaLink de uso gratuito!](https://lavalink.darrennathanael.com/#how2host)
      * O simplemente usa algo como esto:
      ```json
         {
@@ -90,7 +90,7 @@ Nuestra [**Comunidad**](https://team.arcades.ga/discord) de discord nos dedicamo
    3. Complete todos los datos requeridos en los archivos `.json` en `./social_log/` (`./social_log/streamconfig.json` & `./social_log/twitter.json`), si desea que los REGISTROS SOCIALES ¡trabajar! (¡No es necesario completar la clave `authToken` en streamconfig!)
    4. Puede ajustar algunas configuraciones en los otros archivos `./botconfig/*.json`, **PERO POR FAVOR __GUARDE__ MIS CRÉDITOS Y ANUNCIOS.** Esta es la única forma de "ingresar" mi arduo trabajo.
    5. Ahora inicie el bot abriendo una línea cmd en esa carpeta y escribiendo: `node index.js` o `npm start`
-     * Si no desea mantener la terminal abierta o si está en Linux, consulte [pm2 (y mi tutorial)] (https://github.com/Tomato6966/Debian-Cheat-Sheet-Setup/wiki /4-pm2-tutorial) y escriba: `pm2 start --name Bot_Name index.js`
+     * Si no desea mantener la terminal abierta o si está en Linux, consulte [pm2 (y mi tutorial)](https://github.com/Tomato6966/Debian-Cheat-Sheet-Setup/wiki/4-pm2-tutorial) y escriba: `pm2 start --name Bot_Name index.js`
   
 </details>
 
@@ -113,10 +113,10 @@ Nuestra [**Comunidad**](https://team.arcades.ga/discord) de discord nos dedicamo
      * `twitch_secret` se puede obtener de: [Twitch-Developer](https://dev.twitch.tv/docs/api) ([developer-console](https://dev.twitch.tv/console))
      * No es necesario completar `authToken` --> se hará automáticamente
   3. `./social_log/twitter.json`
-     * `consumer_key` que puede obtener de: [Desarrolladores de Twitter] (https://developer.twitter.com)
-     * `consumer_secret` se puede obtener de: [Desarrolladores de Twitter] (https://developer.twitter.com)
-     * `access_token` se puede obtener de: [Desarrolladores de Twitter] (https://developer.twitter.com)
-     * `access_token_secret` se puede obtener de: [Desarrolladores de Twitter] (https://developer.twitter.com)
+     * `consumer_key` que puede obtener de: [Desarrolladores de Twitter](https://developer.twitter.com)
+     * `consumer_secret` se puede obtener de: [Desarrolladores de Twitter](https://developer.twitter.com)
+     * `access_token` se puede obtener de: [Desarrolladores de Twitter](https://developer.twitter.com)
+     * `access_token_secret` se puede obtener de: [Desarrolladores de Twitter](https://developer.twitter.com)
   
 </details>
 

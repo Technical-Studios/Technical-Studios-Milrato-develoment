@@ -14,18 +14,18 @@ Nuestra [**Comunidad**](https://team.arcades.ga/discord) de discord nos nedicamo
 
 ## ✅ Requisitos de alojamiento
 
-<detalles>
+<details>
   <summary>Haga clic para ampliar</summary>
 
   * [nodejs](https://nodejs.org) versión 16.6 o superior, recomiendo la última versión STABLE
   * [python](https://python.org) versión 3.8 o superior, para instalar la base de datos `enmap` (better-sqlite3)
   * Se recomienda un VPS, por lo que no necesita mantener su PC/portátil/RasPi en línea las 24 horas del día, los 7 días de la semana. [Haga clic aquí para una configuración de Debian] (https://github.com/Tomato6966/Debian-Cheat-Sheet-Setup/wiki/).
   
-</detalles>
+</details>
 
 ## 🎶 Requisitos de música
 
-<detalles>
+<details>
   <summary>Haga clic para ampliar</summary>
 
   *¡Para permitir que su Bot reproduzca música, debe conectarlo a una estación LavaLink!*
@@ -76,11 +76,11 @@ Nuestra [**Comunidad**](https://team.arcades.ga/discord) de discord nos nedicamo
     }
      ```
 
-</detalles>
+</details>
 
 ## 🤖 Configuración y puesta en marcha
 
-<detalles>
+<details>
   <summary>Haga clic para ampliar</summary>
 
   **NOTA:** *Puedes hacer exactamente la misma configuración dentro del archivo `example.env`, ¡solo asegúrate de cambiarle el nombre a `.env` o usar variables de entorno!*
@@ -92,11 +92,11 @@ Nuestra [**Comunidad**](https://team.arcades.ga/discord) de discord nos nedicamo
    5. Ahora inicie el bot abriendo una línea cmd en esa carpeta y escribiendo: `node index.js` o `npm start`
      * Si no desea mantener la terminal abierta o si está en Linux, consulte [pm2 (y mi tutorial)] (https://github.com/Tomato6966/Debian-Cheat-Sheet-Setup/wiki /4-pm2-tutorial) y escriba: `pm2 start --name Bot_Name index.js`
   
-</detalles>
+</details>
 
 ## ❓ Dónde obtener qué Api-Key(s)
 
-<detalles>
+<details>
   <summary>Haga clic para ampliar</summary>
 
   **NOTA:** *Puedes hacer exactamente la misma configuración dentro del archivo `example.env`, ¡solo asegúrate de cambiarle el nombre a `.env` o usar variables de entorno!*
@@ -118,7 +118,7 @@ Nuestra [**Comunidad**](https://team.arcades.ga/discord) de discord nos nedicamo
      * `access_token` se puede obtener de: [Desarrolladores de Twitter] (https://developer.twitter.com)
      * `access_token_secret` se puede obtener de: [Desarrolladores de Twitter] (https://developer.twitter.com)
   
-</detalles>
+</details>
 
 # Créditos
 

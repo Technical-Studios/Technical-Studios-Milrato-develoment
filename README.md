@@ -3,7 +3,7 @@
     <img src="https://discord.com/api/guilds/935157109761388554/widget.png?style=banner2">
 </a>
 
-Nuestra [**Comunidad**](https://team.arcades.ga/discord) de discord nos nedicamos a codificar y a traer nuevos codigos fuentes [únase a mi servidor de Discord](https://team.arcades.ga/discord) para obtener un Bot personalizado alojado para usted.
+Nuestra [**Comunidad**](https://team.arcades.ga/discord) de discord nos dedicamos a codificar y a traer nuevos codigos fuentes [únase a mi servidor de Discord](https://team.arcades.ga/discord) para obtener un Bot personalizado alojado para usted.
 
 # Código fuente
 

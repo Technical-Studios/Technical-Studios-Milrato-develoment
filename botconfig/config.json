@@ -4,10 +4,11 @@
     "ownerIDS": [ "313247783748501505", "ID_OWNER" ],
 
     "status": {
-        "text": "{prefix}help | on {guildcount} Servers, with {membercount} Members | Played: {songsplayed} Songs",
+        "text": "{prefix}help | on {guildcount} Servers",
         "text2": "By: discord.gg/Ds5CSrGfSW",
         "type": "PLAYING",
-        "url": "https://twitch.tv/"
+        "url": "https://twitch.tv/",
+        "variables": "{prefix}, {guildcount}, {membercount}, {songsplayed}"
     },
 
     "commment": "No es necesario agregar nada porque ya lo hice por ti.",

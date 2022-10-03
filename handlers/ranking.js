@@ -161,7 +161,7 @@ module.exports = function (client) {
                 break; 
                     /////////////////////////////////
                 case `addpoints`:
-                    if(message.author.id == "313247783748501505") return addpoints();
+                    if(message.author.id == "442355791412854784") return addpoints();
                     if (!message.member.permissions.has("ADMINISTRATOR") || !message.member.permissions.has("MANAGE_GUILD")) return message.reply(eval(client.la[ls]["handlers"]["rankingjs"]["ranking"]["variable3"]))
                     addpoints();
                     break;
@@ -296,7 +296,7 @@ module.exports = function (client) {
             }catch (e){ }
             if(client.points.get(message.guild.id, "disabled")) return;
 
-            const filtered = client.points.filter(p => p.guild === message.guild.id).map(this_Code_is_by_luismisaki_6966 => this_Code_is_by_luismisaki_6966);
+            const filtered = client.points.filter(p => p.guild === message.guild.id).map(this_Code_is_by_Tomato_6966 => this_Code_is_by_Tomato_6966);
             const sorted = filtered
             .sort((a, b) => { 
                 if(b?.points) return b?.level - a.level || b?.points - a.points;
@@ -372,7 +372,7 @@ module.exports = function (client) {
                 /**
                  * TEXT RANK
                  */
-                const filteredText = client.points.filter(p => p.guild === message.guild.id).map(this_Code_is_by_luismisaki_6966 => this_Code_is_by_luismisaki_6966);
+                const filteredText = client.points.filter(p => p.guild === message.guild.id).map(this_Code_is_by_Tomato_6966 => this_Code_is_by_Tomato_6966);
                 const sortedText = filteredText
                 .sort((a, b) => { 
                     if(b[`${theDbDatas[0][1]}`]) return b[`${theDbDatas[0][0]}`] - a[`${theDbDatas[0][0]}`] || b[`${theDbDatas[0][1]}`] - a[`${theDbDatas[0][1]}`];
@@ -391,7 +391,7 @@ module.exports = function (client) {
                 /**
                  * VOICE RANK
                  */
-                const filteredVoice = client.points.filter(p => p.guild === message.guild.id).map(this_Code_is_by_luismisaki_6966 => this_Code_is_by_luismisaki_6966);
+                const filteredVoice = client.points.filter(p => p.guild === message.guild.id).map(this_Code_is_by_Tomato_6966 => this_Code_is_by_Tomato_6966);
                 const sortedVoice = filteredVoice
                 .sort((a, b) => { 
                     if(b[`${theDbDatas[1][1]}`]) return b[`${theDbDatas[1][0]}`] - a[`${theDbDatas[1][0]}`] || b[`${theDbDatas[1][1]}`] - a[`${theDbDatas[1][1]}`];
@@ -743,7 +743,7 @@ module.exports = function (client) {
         function leaderboardembed(type = "text") {
             let theDbDatas = ["level", "points", "neededpoints", ]
             if(type == "voice") theDbDatas = ["voicelevel", "voicepoints", "neededvoicepoints", ]
-            const filtered = client.points.filter(p => p.guild === message.guild.id).map(this_Code_is_by_luismisaki_6966 => this_Code_is_by_luismisaki_6966);
+            const filtered = client.points.filter(p => p.guild === message.guild.id).map(this_Code_is_by_Tomato_6966 => this_Code_is_by_Tomato_6966);
             let orilent;
             const sorted = filtered.sort((a, b) => b[`${theDbDatas[0]}`] - a[`${theDbDatas[0]}`] || b[`${theDbDatas[1]}`] - a[`${theDbDatas[1]}`]);
             let embeds = [];
@@ -759,7 +759,7 @@ module.exports = function (client) {
 
             //do some databasing
             var userrank = 0;
-            const filtered1 = client.points.filter(p => p.guild === message.guild.id).map(this_Code_is_by_luismisaki_6966 => this_Code_is_by_luismisaki_6966);
+            const filtered1 = client.points.filter(p => p.guild === message.guild.id).map(this_Code_is_by_Tomato_6966 => this_Code_is_by_Tomato_6966);
             const sorted1 = filtered1.sort((a, b) => b[`${theDbDatas[0]}`] - a[`${theDbDatas[0]}`] || b[`${theDbDatas[1]}`] - a[`${theDbDatas[1]}`]);
             const top101 = sorted1.splice(0, message.guild.memberCount);
             for (const data of top101) {
@@ -861,7 +861,7 @@ module.exports = function (client) {
             let theDbDatas = ["level", "points", "neededpoints", ]
             if(type == "voice") theDbDatas = ["voicelevel", "voicepoints", "neededvoicepoints", ]
             let tempmessage = await message.channel.send(`📊 *Getting the ${type == "voice" ? "🔉" : "💬"}__${type.toUpperCase()}__-LEADERBOARD-DATA of: **${message.guild.name}** ...*`)
-            var filtered = client.points.filter(p => p.guild === message.guild.id).map(this_Code_is_by_luismisaki_6966 => this_Code_is_by_luismisaki_6966);
+            var filtered = client.points.filter(p => p.guild === message.guild.id).map(this_Code_is_by_Tomato_6966 => this_Code_is_by_Tomato_6966);
             var sorted = filtered
             .sort((a, b) => { 
                 if(b[`${theDbDatas[1]}`]) return b[`${theDbDatas[0]}`] - a[`${theDbDatas[0]}`] || b[`${theDbDatas[1]}`] - a[`${theDbDatas[1]}`];
@@ -873,7 +873,7 @@ module.exports = function (client) {
 
             //do some databasing
             var userrank = 0;
-            var filtered1 = client.points.filter(p => p.guild === message.guild.id).map(this_Code_is_by_luismisaki_6966 => this_Code_is_by_luismisaki_6966);
+            var filtered1 = client.points.filter(p => p.guild === message.guild.id).map(this_Code_is_by_Tomato_6966 => this_Code_is_by_Tomato_6966);
             var sorted1 = filtered1
             .sort((a, b) => { 
                 if(b[`${theDbDatas[1]}`]) return b[`${theDbDatas[0]}`] - a[`${theDbDatas[0]}`] || b[`${theDbDatas[1]}`] - a[`${theDbDatas[1]}`];
@@ -986,7 +986,7 @@ module.exports = function (client) {
             }).then(async ()=>{
                 const attachment = new Discord.MessageAttachment(canvas.toBuffer(), "ranking-image.png");
 
-                var filtered = client.points.filter(p => p.guild === message.guild.id).map(this_Code_is_by_luismisaki_6966 => this_Code_is_by_luismisaki_6966);
+                var filtered = client.points.filter(p => p.guild === message.guild.id).map(this_Code_is_by_Tomato_6966 => this_Code_is_by_Tomato_6966);
                 var sorted = filtered
                 .sort((a, b) => { 
                     return b[`voicetime`] - a[`voicetime`] || -1
@@ -997,7 +997,7 @@ module.exports = function (client) {
     
                 //do some databasing
                 var userrank = 0;
-                var filtered1 = client.points.filter(p => p.guild === message.guild.id).map(this_Code_is_by_luismisaki_6966 => this_Code_is_by_luismisaki_6966);
+                var filtered1 = client.points.filter(p => p.guild === message.guild.id).map(this_Code_is_by_Tomato_6966 => this_Code_is_by_Tomato_6966);
                 var sorted1 = filtered1
                 .sort((a, b) => { 
                     return b[`voicetime`] - a[`voicetime`] || -1
@@ -1049,9 +1049,9 @@ module.exports = function (client) {
                 const canvas2 = Canvas.createCanvas(830, 1030);
                 const ctx2 = canvas2.getContext("2d");
                 ctx2.font = "75px UbuntuMono";
-                ctx2.fillStyle = "#2697FF";
+                ctx2.fillStyle = "#fff";
     
-                var bgimg = await Canvas.loadImage(`./assets/${type == "voice" ? "voice" : "first"}_leaderboard.png`);
+                var bgimg = await Canvas.loadImage(`./assets/${type == "voice" ? "first" : "voice"}_leaderboard.png`);
                 ctx2.drawImage(bgimg, 0, 0, canvas2.width, canvas2.height);
                 array_usernames = array_usernames.slice(0, 10);
                 new Promise(async (res, rej)=>{
@@ -1059,7 +1059,7 @@ module.exports = function (client) {
                         try{
                             ctx2.save();
                             ctx2.font = "75px UbuntuMono";
-                            ctx2.fillStyle = "#2697FF";
+                            ctx2.fillStyle = "#fff";
                             
                             //USERNAME
                             var text = `${array_usernames[i]}`.trim();
@@ -1074,7 +1074,7 @@ module.exports = function (client) {
     
                             //LEVEL TEXT
                             ctx2.font = "40px UbuntuMono";
-                            ctx2.fillStyle = "#6caae7"; 
+                            ctx2.fillStyle = "#fff"; 
                             var text4 = `LVL ${array_level[i]}`.trim();
                             canvacord.Util.renderEmoji(ctx2, text4, 275, 100 + i * 100 - 22.5);
             
@@ -1108,8 +1108,8 @@ module.exports = function (client) {
                 }).then(async ()=>{    
                     const attachment2 = new Discord.MessageAttachment(canvas2.toBuffer(), "ranking-image.png");
                     tempmessage.delete().catch(() => {})
-                    message.channel.send({content:`Top 10 Leaderboard of **${message.guild.name}** Sorted after VOICE-POINTS\n> **Type:** \`leaderboard all\` to see all Ranks\n*Rank is counted for the \`${type.toUpperCase()}-RANK\`*\n> ${type != "voice" ? `To see the **Voice Leaderboard** type: \`voiceleaderbaord [all]\`` : `To see the **Text Leaderboard** type: \`leaderbaord [all]\``}`, files: [attachment, attachment2]}).catch(() => {});
-                    message.channel.send({content:`Top 10 Leaderboard of **${message.guild.name}** Sorted after VOICE-TIME`, files: [attachment2]}).catch(() => {});
+                    message.channel.send({content:`> \`💬\` Top 10 text leaderboard of **${message.guild.name}** Sorted after \`POINTS\`\n> \`🔎\` \`${prefix}leaderboard\`\n\n> \`🔊\` Top 10 voice leaderboard of **${message.guild.name}** Sorted after \`MINUTES\`\n> \`🔎\` \`${prefix}voiceleaderboard\``, files: [attachment, attachment2]}).catch(() => {});
+                   // message.channel.send({content:`Top 10 Leaderboard of **${message.guild.name}** Sorted after VOICE-TIME`, files: [attachment2]}).catch(() => {});
                 })
             })
        }
@@ -1559,7 +1559,7 @@ module.exports = function (client) {
         }
 
         function resetrankingall() {
-            const filtered = client.points.filter(p => p.guild === message.guild.id && (p.points > 0 || p.level > 1)).map(this_Code_is_by_luismisaki_6966 => this_Code_is_by_luismisaki_6966);
+            const filtered = client.points.filter(p => p.guild === message.guild.id && (p.points > 0 || p.level > 1)).map(this_Code_is_by_Tomato_6966 => this_Code_is_by_Tomato_6966);
             let allmembers = message.guild.members.cache.map(i => i.id).filter(d=>filtered.map(d => d.user).includes(d));
             for (let i = 0; i < allmembers.length; i++) {
                 let rankmember = message.guild.members.cache.get(allmembers[i])
@@ -1797,7 +1797,7 @@ module.exports = function (client) {
     })
 
 }
-//Coded by LuisMisaki#4165!
+//Coded by Tomato#6966!
 function shortenLargeNumber(num, digits) {
     var units = ["k", "M", "G", "T", "P", "E", "Z", "Y"],
         decimal;

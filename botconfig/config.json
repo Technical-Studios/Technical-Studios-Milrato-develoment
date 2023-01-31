@@ -1,38 +1,24 @@
 {
-    "token": "xxx",
     "prefix": "//",
-    "ownerIDS": [ "313247783748501505", "ID_OWNER" ],
+    "token": "MTA2NTY2MjQzMTc3MjI4NzEyNw.GHlRmH.UJskjXpUvn1XlCLQB0s7DGSuekZZ-KMiuAOiz0",
+    "ownerIDS": ["313247783748501505", "ID_OWNER"],
 
-    "status": {
-        "text": "{prefix}help | on {guildcount} Servers",
-        "text2": "By: discord.gg/Ds5CSrGfSW",
-        "type": "PLAYING",
-        "url": "https://twitch.tv/",
-        "variables": "{prefix}, {guildcount}, {membercount}, {songsplayed}"
-    },
+    "commment": "Claves agregadas...",
 
-    "commment": "No es necesario agregar nada porque ya lo hice por ti.",
+    "bannermusic": "https://img.freepik.com/vector-gratis/conjunto-plantillas-banners-web-espacio-texto_1017-30732.jpg?w=2000",
+    "serverid": "1062848922411864074",
+    "roleid": "1064344756865474621",
 
     "fnbr": "43549683-4cdb-4eb5-8f1c-1b88dc82d910",
     "fortnitetracker": "ac53a1db-3988-4cf5-888f-2518a1501abb",
     "memer_api": "cLQqbvN3TCL",
 
-    "spotify": {
-        "clientSecret": "053469ffeb3844079fab734ebf3090c2",
-        "clientID": "bf5ee2a72bae40ffadc71a47280e5ff9"
+    "status": {
+        "text": "by: k4itrun",
+        "text2": "by: discord.gg/milrato",
+        "type": "PLAYING",
+        "url": "https://twitch.tv/#"
     },
-
-    "clientsettings": {
-        "nodes": [
-            {
-                "host": "lavalink.oops.wtf",
-                "port": 2000,
-                "password": "www.freelavalink.ga",
-                "secure": false
-            }
-        ]
-    },
-    
     "settings": {
         "COMMENT": "time_delay 0 === insta leave",
         "leaveOnEmpty_Channel": {

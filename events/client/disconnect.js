@@ -4,11 +4,11 @@ module.exports = client => {
 }
 /**
   * @INFO
-  * Bot Coded by LuisMisaki#4165 | https://team.aracdes.ga/discord
+  * Bot Coded by Truchorko#5566 | https://discord.gg/utmuExHwyT
   * @INFO
-  * Work for Milrato Development | https://team.arcades.ga
+  * Work for Team Arcades | https://team.arcades.ga
   * @INFO
-  * Please mention him / Milrato Development, when using this Code!
+  * Please mention him / Team Arcades, when using this Code!
   * @INFO
 */
 

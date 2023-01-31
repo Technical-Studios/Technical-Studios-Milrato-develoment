@@ -10,7 +10,7 @@ module.exports = {
     
     try {
       interaction?.reply({ephemeral: true, embeds: [new Discord.MessageEmbed()
-      .setAuthor(handlemsg(client.la[ls].cmds.info.serveravatar.author, { servername: guild.name }), guild.iconURL({dynamic: true}), "https://team.aracdes.ga/discord")
+      .setAuthor(handlemsg(client.la[ls].cmds.info.serveravatar.author, { servername: guild.name }), guild.iconURL({dynamic: true}), "https://discord.gg/team-arcades-935157109761388554")
       .setColor(es.color).setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
       .addField("📌 PNG",`[\`LINK\`](${guild.iconURL({format: "png"})})`, true)
       .addField("📌 JPEG",`[\`LINK\`](${guild.iconURL({format: "jpg"})})`, true)
@@ -30,9 +30,9 @@ module.exports = {
 }
 /**
  * @INFO
- * Bot Coded by LuisMisaki#4165 | https://team.aracdes.ga/discord
+ * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
  * @INFO
- * Work for Milrato Development | https://team.arcades.ga
+ * Work for Milrato Development | https://teamarcades.xyz
  * @INFO
  * Please mention him / Milrato Development, when using this Code!
  * @INFO

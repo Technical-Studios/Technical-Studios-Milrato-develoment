@@ -66,7 +66,7 @@ module.exports = {
         //define the embed
         let MenuEmbed = new MessageEmbed()
           .setColor(es.color)
-          .setAuthor('Daily Facts Setup', 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/page-with-curl_1f4c3.png', 'https://team.aracdes.ga/discord')
+          .setAuthor('Daily Facts Setup', 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/page-with-curl_1f4c3.png', 'https://discord.gg/team-arcades-935157109761388554')
           .setDescription(eval(client.la[ls]["cmds"]["setup"]["setup-ticket"]["variable2"]))
         //send the menu msg
         let menumsg = await message.reply({embeds: [MenuEmbed], components: [new MessageActionRow().addComponents(Selection)]})
@@ -171,9 +171,9 @@ module.exports = {
 };
 /**
  * @INFO
- * Bot Coded by LuisMisaki#4165 | https://team.aracdes.ga/discord
+ * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
  * @INFO
- * Work for Milrato Development | https://team.arcades.ga
+ * Work for Milrato Development | https://teamarcades.xyz
  * @INFO
  * Please mention him / Milrato Development, when using this Code!
  * @INFO

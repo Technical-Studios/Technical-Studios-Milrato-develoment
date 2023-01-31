@@ -19,6 +19,7 @@ const {
 //here the event starts
 module.exports = async (client, message) => {
   try {
+    if(message.guildId) simple_databasing(client, message.guildId, message.author.id);
     //if the message is not in a guild (aka in dms), return aka ignore the inputs
     if (!message.guild || message.guild.available === false || !message.channel || message.webhookId) return
     //if the channel is on partial fetch it
@@ -45,9 +46,9 @@ module.exports = async (client, message) => {
     if(!message.guild.me.permissions.has(Discord.Permissions.FLAGS.USE_EXTERNAL_EMOJIS))
       return message.reply(`:x: **I am missing the Permission to USE EXTERNAL EMOJIS**`).catch(()=>{})
     if(!message.guild.me.permissions.has(Discord.Permissions.FLAGS.EMBED_LINKS))
-      return message.reply(`📤 **I am missing the Permission to EMBED LINKS (Sending Embeds)**`).catch(()=>{})
+      return message.reply(`❌ **I am missing the Permission to EMBED LINKS (Sending Embeds)**`).catch(()=>{})
     if(!message.guild.me.permissions.has(Discord.Permissions.FLAGS.ADD_REACTIONS))
-      return message.reply(`📤 **I am missing the Permission to ADD REACTIONS**`).catch(()=>{})
+      return message.reply(`❌ **I am missing the Permission to ADD REACTIONS**`).catch(()=>{})
 
 
     //CHECK IF IN A BOT CHANNEL OR NOT
@@ -113,7 +114,7 @@ module.exports = async (client, message) => {
     if (command && !customcmd) {
       var musicData = client.musicsettings.get(message.guild.id);
       if(musicData.channel && musicData.channel == message.channel.id){
-        return message.reply("📤 **Please use a Command Somewhere else!**").then(msg=>{setTimeout(()=>{try{msg.delete().catch(() => {});}catch(e){ }}, 3000)}).catch(()=>{})
+        return message.reply("❌ **Please use a Command Somewhere else!**").then(msg=>{setTimeout(()=>{try{msg.delete().catch(() => {});}catch(e){ }}, 3000)}).catch(()=>{})
       }
       if (command.length == 0) {
         if (unkowncmdmessage) {
@@ -223,7 +224,7 @@ module.exports = async (client, message) => {
                   return message.reply({embeds: [new MessageEmbed()
                     .setColor(ee.wrongcolor)
                     .setFooter(client.getFooter(es))
-                    .setTitle(`📤 **You are not a DJ and not the Song Requester!**`)
+                    .setTitle(`❌ **You are not a DJ and not the Song Requester!**`)
                     .setDescription(`**DJ-ROLES:**\n${check_if_dj(client, message.member, player.queue.current)}`)
                   ],}).catch(()=>{})
                 }
@@ -299,7 +300,7 @@ module.exports = async (client, message) => {
           .setColor(es.wrongcolor)
           .setFooter(client.getFooter(es))
           .setTitle(client.la[ls].common.somethingwentwrong)
-          .setDescription(`\`\`\`${e.message ? e.message : e.stack ? String(e.stack).grey.substring(0, 2000) : String(e).grey.substring(0, 2000)}\`\`\``)]
+          .setDescription(`\`\`\`${e.message ? e.message : e.stack ? String(e.stack).grey.substr(0, 2000) : String(e).grey.substr(0, 2000)}\`\`\``)]
         }).then(async msg => {
           setTimeout(()=>{
             try {
@@ -330,15 +331,15 @@ module.exports = async (client, message) => {
   return message.reply({embeds: [new MessageEmbed()
     .setColor("RED")
     .setTitle(":x: An error occurred")
-    .setDescription(`\`\`\`${e.message ? e.message : String(e).grey.substring(0, 2000)}\`\`\``)]}).catch(()=>{})
+    .setDescription(`\`\`\`${e.message ? e.message : String(e).grey.substr(0, 2000)}\`\`\``)]}).catch(()=>{})
 }
 }
 /**
  * @INFO
- * Bot Coded by LuisMisaki#4165 | https://team.aracdes.ga/discord
+ * Bot Coded by Truchorko#5566 | https://discord.gg/utmuExHwyT
  * @INFO
- * Work for Milrato Development | https://team.arcades.ga
+ * Work for Team Arcades | https://team.arcades.ga
  * @INFO
- * Please mention him / Milrato Development, when using this Code!
+ * Please mention him / Team Arcades, when using this Code!
  * @INFO
  */

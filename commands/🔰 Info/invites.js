@@ -62,7 +62,7 @@ module.exports = {
         leaves = nFormatter(leaves, 2);
         messagesCount = nFormatter(messagesCount, 3);
       message.reply({embeds: [new Discord.MessageEmbed()
-        .setAuthor(handlemsg(client.la[ls].cmds.info.invites.author, {usertag: user.tag}), user.displayAvatarURL({dynamic: true}), "https://team.aracdes.ga/discord")
+        .setAuthor(handlemsg(client.la[ls].cmds.info.invites.author, {usertag: user.tag}), user.displayAvatarURL({dynamic: true}), "https://discord.gg/team-arcades-935157109761388554")
         .setColor(es.color).setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
         .addField("\u200b", handlemsg(client.la[ls].cmds.info.invites.field1.value, {realinvites: realinvites, user: user}))
         .addField(client.la[ls].cmds.info.invites.field2.title, handlemsg(client.la[ls].cmds.info.invites.field2.value, {invites: invites, fake: fake, leaves: leaves}))
@@ -82,9 +82,9 @@ module.exports = {
 }
 /*
  * @INFO
- * Bot Coded by LuisMisaki#4165 | https://team.aracdes.ga/discord
+ * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
  * @INFO
- * Work for Milrato Development | https://team.arcades.ga
+ * Work for Milrato Development | https://teamarcades.xyz
  * @INFO
  * Please mention him / Milrato Development, when using this Code!
  * @INFO

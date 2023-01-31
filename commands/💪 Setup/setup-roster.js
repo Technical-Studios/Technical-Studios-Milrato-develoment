@@ -134,7 +134,7 @@ module.exports = {
         //define the embed
         let MenuEmbed = new Discord.MessageEmbed()
         .setColor(es.color)
-        .setAuthor(client.getAuthor('Server Roster Setup', 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/facebook/65/page-with-curl_1f4c3.png', 'https://team.aracdes.ga/discord'))
+        .setAuthor(client.getAuthor('Server Roster Setup', 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/facebook/65/page-with-curl_1f4c3.png', 'https://discord.gg/team-arcades-935157109761388554'))
         .setDescription(eval(client.la[ls]["cmds"]["setup"]["setup-ticket"]["variable2"]))
         let used1 = false;
         //send the menu msg
@@ -248,7 +248,7 @@ module.exports = {
         //define the embed
         let MenuEmbed = new Discord.MessageEmbed()
           .setColor(es.color)
-          .setAuthor(SetupNumber + " Server Roster Setup", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/facebook/65/page-with-curl_1f4c3.png", "https://team.aracdes.ga/discord")
+          .setAuthor(SetupNumber + " Server Roster Setup", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/facebook/65/page-with-curl_1f4c3.png", "https://discord.gg/team-arcades-935157109761388554")
           .setDescription(eval(client.la[ls]["cmds"]["setup"]["setup-ticket"]["variable4"]))
         //send the menu msg
         let menumsg = await message.reply({
@@ -809,9 +809,9 @@ module.exports = {
 };
 /**
  * @INFO
- * Bot Coded by LuisMisaki#4165 | https://team.aracdes.ga/discord
+ * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
  * @INFO
- * Work for Milrato Development | https://team.arcades.ga
+ * Work for Milrato Development | https://teamarcades.xyz
  * @INFO
  * Please mention him / Milrato Development, when using this Code!
  * @INFO
@@ -830,20 +830,20 @@ module.exports = {
     "8️⃣",
     "9️⃣",
     "🔟",
-    "<:Number_11:893173642022748230>",
-    "<:Number_12:893173642165383218>",
-    "<:Number_13:893173642274410496>",
-    "<:Number_14:893173642198921296>",
-    "<:Number_15:893173642182139914>",
-    "<:Number_16:893173642530271342>",
-    "<:Number_17:893173642538647612>",
-    "<:Number_18:893173642307977258>",
-    "<:Number_19:893173642588991488>",
-    "<:Number_20:893173642307977266>",
-    "<:Number_21:893173642274430977>",
-    "<:Number_22:893173642702250045>",
-    "<:Number_23:893173642454773782>",
-    "<:Number_24:893173642744201226>",
-    "<:Number_25:893173642727424020>"
+    "893173642022748230",
+    "893173642165383218",
+    "893173642274410496",
+    "893173642198921296",
+    "893173642182139914",
+    "893173642530271342",
+    "893173642538647612",
+    "893173642307977258",
+    "893173642588991488",
+    "893173642307977266",
+    "893173642274430977",
+    "893173642702250045",
+    "893173642454773782",
+    "893173642744201226",
+    "893173642727424020"
   ]
 }

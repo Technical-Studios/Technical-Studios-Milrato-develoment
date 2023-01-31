@@ -54,7 +54,7 @@ module.exports = {
         ]});
       }
       let tempmsg = await message.reply({embeds: [new Discord.MessageEmbed().setColor(es.color)
-        .setAuthor(client.la[ls].cmds.info.youtubeinfo.loading, "https://cdn.discordapp.com/emojis/756773010123522058.gif", "https://team.aracdes.ga/discord")]})
+        .setAuthor(client.la[ls].cmds.info.youtubeinfo.loading, "https://cdn.discordapp.com/emojis/756773010123522058.gif", "https://discord.gg/team-arcades-935157109761388554")]})
       let Channel = await channelInfo(url)
       let embed = new Discord.MessageEmbed()
         .setTitle(Channel.name)
@@ -154,9 +154,9 @@ module.exports = {
 }
 /**
  * @INFO
- * Bot Coded by LuisMisaki#4165 | https://team.aracdes.ga/discord
+ * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
  * @INFO
- * Work for Milrato Development | https://team.arcades.ga
+ * Work for Milrato Development | https://teamarcades.xyz
  * @INFO
  * Please mention him / Milrato Development, when using this Code!
  * @INFO

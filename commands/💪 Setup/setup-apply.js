@@ -24,7 +24,7 @@ module.exports = {
   type: "system",
   run: async (client, message, args, cmduser, text, prefix) => {
     let theemoji = "📜";
-    let MilratoGuild = client.guilds.cache.get("773668217163218944");
+    let MilratoGuild = client.guilds.cache.get(config.serverid);
     if (MilratoGuild) theemoji = "877653386747605032";
     let allbuttons = [new MessageActionRow().addComponents([new MessageButton().setStyle('SUCCESS').setEmoji(theemoji).setCustomId("User_Apply").setLabel("Apply")])]
     let es = client.settings.get(message.guild.id, "embed");
@@ -128,7 +128,7 @@ module.exports = {
         //define the embed
         let MenuEmbed = new Discord.MessageEmbed()
           .setColor(es.color)
-          .setAuthor(client.getAuthor('Application Setup', 'https://cdn.discordapp.com/emojis/877653386747605032.png?size=96', 'https://team.aracdes.ga/discord'))
+          .setAuthor(client.getAuthor('Application Setup', 'https://cdn.discordapp.com/emojis/877653386747605032.png?size=96', 'https://discord.gg/team-arcades-935157109761388554'))
           .setDescription(eval(client.la[ls]["cmds"]["setup"]["setup-ticket"]["variable2"]))
         let used1 = false;
         //send the menu msg
@@ -163,7 +163,7 @@ module.exports = {
         });
         //Once the Collections ended edit the menu message
         collector.on('end', collected => {
-          menumsg.edit({embeds: [menumsg.embeds[0].setDescription(`~~${menumsg.embeds[0].description}~~`)], components: [], content: `${collected && collected.first() && collected.first().values ? `<a:yes:929001012830806016> **Selected: \`${collected ? collected.first().values[0] : "Nothing"}\`**` : "❌ **NOTHING SELECTED - CANCELLED**" }`})
+          menumsg.edit({embeds: [menumsg.embeds[0].setDescription(`~~${menumsg.embeds[0].description}~~`)], components: [], content: `${collected && collected.first() && collected.first().values ? `✅ **Selected: \`${collected ? collected.first().values[0] : "Nothing"}\`**` : "❌ **NOTHING SELECTED - CANCELLED**" }`})
         });
       } catch (e) {
         console.log(String(e.stack).grey.bgRed)
@@ -351,7 +351,7 @@ module.exports = {
         //define the embed
         let MenuEmbed = new Discord.MessageEmbed()
           .setColor(es.color)
-          .setAuthor(SetupNumber + " Apply Setup", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/282/incoming-envelope_1f4e8.png", "https://team.aracdes.ga/discord")
+          .setAuthor(SetupNumber + " Apply Setup", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/282/incoming-envelope_1f4e8.png", "https://discord.gg/team-arcades-935157109761388554")
           .setDescription(eval(client.la[ls]["cmds"]["setup"]["setup-ticket"]["variable4"]))
         //send the menu msg
         let menumsg = await message.reply({embeds: [MenuEmbed], components: [new MessageActionRow().addComponents(Selection)]})
@@ -374,7 +374,7 @@ module.exports = {
         });
         //Once the Collections ended edit the menu message
         collector.on('end', collected => {
-          menumsg.edit({embeds: [menumsg.embeds[0].setDescription(`~~${menumsg.embeds[0].description}~~`)], components: [], content: `${collected && collected.first() && collected.first().values ? `<a:yes:929001012830806016> **Selected: \`${collected ? collected.first().values[0] : "Nothing"}\`**` : "❌ **NOTHING SELECTED - CANCELLED**" }`})
+          menumsg.edit({embeds: [menumsg.embeds[0].setDescription(`~~${menumsg.embeds[0].description}~~`)], components: [], content: `${collected && collected.first() && collected.first().values ? `✅ **Selected: \`${collected ? collected.first().values[0] : "Nothing"}\`**` : "❌ **NOTHING SELECTED - CANCELLED**" }`})
         });
       } catch (e) {
         console.log(String(e.stack).grey.bgRed)
@@ -2706,7 +2706,7 @@ module.exports = {
             .setFooter(client.getFooter(es))
 
             .setColor(es.color)
-            .setTitle(eval(client.la[ls]["cmds"]["setup"]["setup-apply"]["variable174"])) //LuisMisaki#4165
+            .setTitle(eval(client.la[ls]["cmds"]["setup"]["setup-apply"]["variable174"])) //k4itrun#7101
             .setFooter("ADD THE INDEX TO EDIT THE MSG", message.guild.iconURL({
               dynamic: true
             }))
@@ -2877,7 +2877,7 @@ module.exports = {
                     Questions = apply_for_here.get(message.guild.id, pre+".QUESTIONS");
                     var new_embed = new Discord.MessageEmbed().setFooter(client.getFooter(es))
                       .setColor(es.color)
-                      .setTitle(eval(client.la[ls]["cmds"]["setup"]["setup-apply"]["variable177"])) //LuisMisaki#4165
+                      .setTitle(eval(client.la[ls]["cmds"]["setup"]["setup-apply"]["variable177"])) //k4itrun#7101
                       .setFooter(message.guild.name, message.guild.iconURL({
                         dynamic: true
                       }))
@@ -3133,7 +3133,7 @@ module.exports = {
               Questions = apply_for_here.get(message.guild.id, pre+".QUESTIONS");
               var embed = new Discord.MessageEmbed().setFooter(client.getFooter(es))
                 .setColor(es.color)
-                .setTitle(eval(client.la[ls]["cmds"]["setup"]["setup-apply"]["variable188"])) //LuisMisaki#4165
+                .setTitle(eval(client.la[ls]["cmds"]["setup"]["setup-apply"]["variable188"])) //k4itrun#7101
                 .setFooter(message.guild.name, message.guild.iconURL({
                   dynamic: true
                 }))
@@ -3169,7 +3169,7 @@ module.exports = {
             .setFooter(client.getFooter(es))
 
             .setColor(es.color)
-            .setTitle(eval(client.la[ls]["cmds"]["setup"]["setup-apply"]["variable190"])) //LuisMisaki#4165
+            .setTitle(eval(client.la[ls]["cmds"]["setup"]["setup-apply"]["variable190"])) //k4itrun#7101
             .setFooter("ADD THE INDEX TO EDIT THE MSG", message.guild.iconURL({
               dynamic: true
             }))
@@ -3225,7 +3225,7 @@ module.exports = {
                 Questions = apply_for_here.get(message.guild.id, pre+".QUESTIONS");
                 var new_embed = new Discord.MessageEmbed().setFooter(client.getFooter(es))
                   .setColor(es.color)
-                  .setTitle(eval(client.la[ls]["cmds"]["setup"]["setup-apply"]["variable193"])) //LuisMisaki#4165
+                  .setTitle(eval(client.la[ls]["cmds"]["setup"]["setup-apply"]["variable193"])) //k4itrun#7101
                   .setFooter(message.guild.name, message.guild.iconURL({
                     dynamic: true
                   }))
@@ -3511,8 +3511,8 @@ module.exports = {
           var embed = new Discord.MessageEmbed()
             .setFooter(client.getFooter(es))
             .setColor(es.color)
-            .setTitle(eval(client.la[ls]["cmds"]["setup"]["setup-apply"]["variable219"])) //LuisMisaki#4165
-            .setDescription(eval(client.la[ls]["cmds"]["setup"]["setup-apply"]["variable220"])) //LuisMisaki#4165
+            .setTitle(eval(client.la[ls]["cmds"]["setup"]["setup-apply"]["variable219"])) //k4itrun#7101
+            .setDescription(eval(client.la[ls]["cmds"]["setup"]["setup-apply"]["variable220"])) //k4itrun#7101
             .setTimestamp()
           message.reply({
             embeds: [embed]
@@ -3535,9 +3535,9 @@ module.exports = {
 }
 /**
  * @INFO
- * Bot Coded by LuisMisaki#4165 | https://github?.com/Truchorko5566/Discord-Js-Handler-Template
+ * Bot Coded by k4itrun#7101 | https://github?.com/Truchorko5566/Discord-Js-Handler-Template
  * @INFO
- * Work for Milrato Development | https://team.arcades.ga
+ * Work for Milrato Development | https://teamarcades.xyz
  * @INFO
  * Please mention him / Milrato Development, when using this Code!
  * @INFO
@@ -3556,20 +3556,20 @@ function getNumberEmojis() {
     "8️⃣",
     "9️⃣",
     "🔟",
-    "<:Number_11:893173642022748230>",
-    "<:Number_12:893173642165383218>",
-    "<:Number_13:893173642274410496>",
-    "<:Number_14:893173642198921296>",
-    "<:Number_15:893173642182139914>",
-    "<:Number_16:893173642530271342>",
-    "<:Number_17:893173642538647612>",
-    "<:Number_18:893173642307977258>",
-    "<:Number_19:893173642588991488>",
-    "<:Number_20:893173642307977266>",
-    "<:Number_21:893173642274430977>",
-    "<:Number_22:893173642702250045>",
-    "<:Number_23:893173642454773782>",
-    "<:Number_24:893173642744201226>",
-    "<:Number_25:893173642727424020>"
+    "893173642022748230",
+    "893173642165383218",
+    "893173642274410496",
+    "893173642198921296",
+    "893173642182139914",
+    "893173642530271342",
+    "893173642538647612",
+    "893173642307977258",
+    "893173642588991488",
+    "893173642307977266",
+    "893173642274430977",
+    "893173642702250045",
+    "893173642454773782",
+    "893173642744201226",
+    "893173642727424020"
   ]
 }

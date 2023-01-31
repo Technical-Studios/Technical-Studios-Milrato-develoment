@@ -51,7 +51,7 @@ module.exports = {
           usertag: user.tag
         }), user.displayAvatarURL({
           dynamic: true
-        }), "https://team.aracdes.ga/discord")
+        }), "https://discord.gg/team-arcades-935157109761388554")
         .setColor(es.color).setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
         .addField("📌 PNG", `[\`LINK\`](${user.displayAvatarURL({format: "png"})})`, true)
         .addField("📌 JPEG", `[\`LINK\`](${user.displayAvatarURL({format: "jpg"})})`, true)
@@ -82,9 +82,9 @@ module.exports = {
 }
 /*
  * @INFO
- * Bot Coded by LuisMisaki#4165 | https://team.aracdes.ga/discord
+ * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
  * @INFO
- * Work for Milrato Development | https://team.arcades.ga
+ * Work for Milrato Development | https://teamarcades.xyz
  * @INFO
  * Please mention him / Milrato Development, when using this Code!
  * @INFO

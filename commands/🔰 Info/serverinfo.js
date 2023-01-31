@@ -72,9 +72,9 @@ module.exports = {
 
       embed.addField(client.la[ls].cmds.info.serverinfo.field10, "🟢 \`" + message.guild.members.cache.filter(member => member.presence && member.presence && member.presence.status != "offline").size + "\`", true)
       embed.addField(client.la[ls].cmds.info.serverinfo.field11, ":black_circle:\`" + message.guild.members.cache.filter(member => !member.presence || member.presence && member.presence.status == "offline").size + "\`", true)
-      embed.addField(client.la[ls].cmds.info.serverinfo.field12, "<a:nitro_logo:833402717950836806> \`" + message.guild.premiumSubscriptionCount + "\`", true)
+      embed.addField(client.la[ls].cmds.info.serverinfo.field12, "💜 \`" + message.guild.premiumSubscriptionCount + "\`", true)
 
-      embed.addField(client.la[ls].cmds.info.serverinfo.field13, `<a:nitro:833402717506502707> \`${boostlevel}\``, true)
+      embed.addField(client.la[ls].cmds.info.serverinfo.field13, `⭐ \`${boostlevel}\``, true)
       embed.addField(client.la[ls].cmds.info.serverinfo.field14, "👾 \`" + maxbitrate + " kbps\`", true)
       if(boosts >= 14){
           embed.addField(`**📌 Vanity:**`, `${message.guild.vanityURLCode ? `https://discord.gg/${message.guild.vanityURLCode}` : "📤 No Vanity-Invite"}`)
@@ -139,9 +139,9 @@ module.exports = {
 }
 /**
  * @INFO
- * Bot Coded by LuisMisaki#4165 | https://team.aracdes.ga/discord
+ * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
  * @INFO
- * Work for Milrato Development | https://team.arcades.ga
+ * Work for Milrato Development | https://teamarcades.xyz
  * @INFO
  * Please mention him / Milrato Development, when using this Code!
  * @INFO

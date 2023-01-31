@@ -58,7 +58,7 @@ module.exports = {
       }
       try{
         if (platform !== "pc" && platform !== "xbl" && platform !== "psn") platform = "pc";
-        let themsg = await message.reply(`<a:Loading:833101350623117342> Getting the Fortnite Stats of ${Epic}`)
+        let themsg = await message.reply(`🍃 Getting the Fortnite Stats of ${Epic}`)
         const stats = new Canvas.FortniteStats()
         const image = await stats.setToken(
           process.env.fortnitetracker || config.fortnitetracker)
@@ -85,9 +85,9 @@ module.exports = {
 }
 /*
  * @INFO
- * Bot Coded by LuisMisaki#4165 | https://team.aracdes.ga/discord
+ * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
  * @INFO
- * Work for Milrato Development | https://team.arcades.ga
+ * Work for Milrato Development | https://teamarcades.xyz
  * @INFO
  * Please mention him / Milrato Development, when using this Code!
  * @INFO

@@ -22,7 +22,7 @@ module.exports = {
         //create the EMBED
         const embeduserinfo = new MessageEmbed()
         embeduserinfo.setThumbnail(guild.iconURL({ dynamic: true, size: 512 }))
-        embeduserinfo.setAuthor(client.la[ls].cmds.info.roleinfo.author + " " + role.name, guild.iconURL({ dynamic: true }), "https://team.aracdes.ga/discord")
+        embeduserinfo.setAuthor(client.la[ls].cmds.info.roleinfo.author + " " + role.name, guild.iconURL({ dynamic: true }), "https://discord.gg/team-arcades-935157109761388554")
         embeduserinfo.addField(client.la[ls].cmds.info.roleinfo.field1,`\`${role.name}\``,true)
         embeduserinfo.addField(client.la[ls].cmds.info.roleinfo.field2,`\`${role.id}\``,true)
         embeduserinfo.addField(client.la[ls].cmds.info.roleinfo.field3,`\`${role.hexColor}\``,true)
@@ -45,9 +45,9 @@ module.exports = {
 }
 /**
  * @INFO
- * Bot Coded by LuisMisaki#4165 | https://team.aracdes.ga/discord
+ * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
  * @INFO
- * Work for Milrato Development | https://team.arcades.ga
+ * Work for Milrato Development | https://teamarcades.xyz
  * @INFO
  * Please mention him / Milrato Development, when using this Code!
  * @INFO

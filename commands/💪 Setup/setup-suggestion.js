@@ -101,7 +101,7 @@ module.exports = {
             }))
 
         //define the embed
-        let MenuEmbed = new MessageEmbed().setColor(es.color).setAuthor('Suggestion System', 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/282/light-bulb_1f4a1.png', 'https://team.aracdes.ga/discord').setDescription(eval(client.la[ls]["cmds"]["setup"]["setup-ticket"]["variable2"]))
+        let MenuEmbed = new MessageEmbed().setColor(es.color).setAuthor('Suggestion System', 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/282/light-bulb_1f4a1.png', 'https://discord.gg/team-arcades-935157109761388554').setDescription(eval(client.la[ls]["cmds"]["setup"]["setup-ticket"]["variable2"]))
         //send the menu msg
         let menumsg = await message.reply({
           embeds: [MenuEmbed],
@@ -144,7 +144,7 @@ module.exports = {
           maybemsg: `💡 We are thinking about this idea!`,
           duplicatemsg: `💢 This is a duplicated Suggestion`,
           soonmsg: `👌 Expect this Feature Soon!`,
-          statustext: `<a:Loading:833101350623117342> Waiting for Community Feedback, please vote!`,
+          statustext: `🍃 Waiting for Community Feedback, please vote!`,
           footertext: `Want to suggest / Feedback something? Simply type in this channel!`,
           approveemoji: `833101995723194437`,
           denyemoji: `833101993668771842`,
@@ -727,9 +727,9 @@ module.exports = {
 };
 /**
  * @INFO
- * Bot Coded by LuisMisaki#4165 | https://team.aracdes.ga/discord
+ * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
  * @INFO
- * Work for Milrato Development | https://team.arcades.ga
+ * Work for Milrato Development | https://teamarcades.xyz
  * @INFO
  * Please mention him / Milrato Development, when using this Code!
  * @INFO

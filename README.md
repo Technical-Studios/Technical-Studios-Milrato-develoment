@@ -1,14 +1,17 @@
 # Milrato
-<a href="https://team.arcades.ga/discord">
+<a href="https://teamarcades.xyz/discord">
     <img src="https://discord.com/api/guilds/935157109761388554/widget.png?style=banner2">
 </a>
 
-Nuestra [**Comunidad**](https://team.arcades.ga/discord) de discord nos dedicamos a codificar y a traer nuevos codigos fuentes [únase a mi servidor de Discord](https://team.arcades.ga/discord) para obtener un Bot personalizado alojado para usted.
+Nuestra [**Comunidad**](https://teamarcades.xyz/discord) de discord nos dedicamos a codificar y a traer nuevos codigos fuentes [únase a mi servidor de Discord](https://teamarcades.xyz/discord) para obtener un Bot personalizado alojado para usted.
 
-# Código fuente
+# 📑 Traducion
 
-**NOTA:** Se sugiere usar la versión Sharded (&Clustered), si planea usarla para un BOT VERIFICADO (¡en más de 2000 servidores!)
+**NOTA:** Para las personas que quieren **traducir** este bot al 100% les e ayudó con un 50% si se puede decir, en **[`languages/sp.json`]()** esta el 90% **Traducido al Español** usando el **Traductor** de **Google** ya que pueden ver errores de ortografía y de textos, esto ustedes lo pueden solucionar solo se que fue de gran ayuda traducir +5000 lineas para este codigo!)
  
+## ⚔ Emojis
+
+**NOTA:** En este codigo todos los **Emojis** fueron cambiados por **Emojis** predeterminados de **Discord** esto fue echo con el fin de que fuera de mejor uso y ahorar mas tiempo en añadir emojis personalizados!)
 
 # Guía de instalación 🔥
 

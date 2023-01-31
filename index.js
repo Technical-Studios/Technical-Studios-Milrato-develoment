@@ -12,7 +12,7 @@
   * 8 CARGAR las funciones BOT
   * 9 Iniciar sesión en el Bot
  * 
- *   BOT CODED BY: Truchorko5566 | https://team.arcades.ga
+ *   BOT CODED BY: Truchorko5566 | https://teamarcades.xyz
  *********************************************************/
 
 
@@ -46,21 +46,21 @@ const client = new Discord.Client({
     repliedUser: false,
   },
   partials: ['MESSAGE', 'CHANNEL', 'REACTION', 'GUILD_MEMBER', 'USER'],
-  intents: [Discord.Intents.FLAGS.GUILDS,
-  Discord.Intents.FLAGS.GUILD_MEMBERS,
-  Discord.Intents.FLAGS.GUILD_BANS,
-  Discord.Intents.FLAGS.GUILD_EMOJIS_AND_STICKERS,
-  Discord.Intents.FLAGS.GUILD_INTEGRATIONS,
-  Discord.Intents.FLAGS.GUILD_WEBHOOKS,
-  Discord.Intents.FLAGS.GUILD_INVITES,
-  Discord.Intents.FLAGS.GUILD_VOICE_STATES,
-  Discord.Intents.FLAGS.GUILD_PRESENCES,
-  Discord.Intents.FLAGS.GUILD_MESSAGES,
-  Discord.Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
-  //Discord.Intents.FLAGS.GUILD_MESSAGE_TYPING,
-  Discord.Intents.FLAGS.DIRECT_MESSAGES,
-  Discord.Intents.FLAGS.DIRECT_MESSAGE_REACTIONS,
-    //Discord.Intents.FLAGS.DIRECT_MESSAGE_TYPING
+  intents: [
+        "GUILDS",
+        "GUILD_MEMBERS",
+        "GUILD_BANS",
+        "GUILD_EMOJIS_AND_STICKERS",
+        "GUILD_INTEGRATIONS",
+        "GUILD_WEBHOOKS",
+        "GUILD_INVITES",
+        "GUILD_VOICE_STATES",
+        "GUILD_VOICE_STATES",
+        "GUILD_PRESENCES",
+        "GUILD_MESSAGES",
+        "GUILD_MESSAGE_REACTIONS",
+        "DIRECT_MESSAGES",
+        "DIRECT_MESSAGE_REACTIONS"
   ],
   presence: {
     activities: [{ name: `${config.status.text}`.replace("{prefix}", config.prefix), type: config.status.type, url: config.status.url }],
@@ -149,9 +149,9 @@ client.login(process.env.token || config.token);
 
 /**********************************************************
  * @INFO
- * Bot Coded by LuisMisaki#4165 | https://team.aracdes.ga/discord
+ * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
  * @INFO
- * Work for Milrato Development | https://team.arcades.ga
+ * Work for Milrato Development | https://teamarcades.xyz
  * @INFO
  * Please mention him / Milrato Development, when using this Code!
  * @INFO

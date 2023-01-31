@@ -12,9 +12,9 @@ module.exports = {
       const { member, channelId, guildId, applicationId, commandName, deferred, replied, ephemeral, options, id, createdTimestamp } = interaction; 
       const { guild } = member;
 		try{
-      let milratodc = client.guilds.cache.get("773668217163218944")
+      let milratodc = client.guilds.cache.get(config.serverid)
       let milratomembers = await milratodc.members.fetch();
-      let partnercount = milratomembers.filter(m => m.roles.cache.has("823150244509515807"))
+      let partnercount = milratomembers.filter(m => m.roles.cache.has(config.roleid))
       partnercount = partnercount.map(m=>m.id).length
       
       let menuoptions = [
@@ -94,7 +94,7 @@ module.exports = {
       //define the embed
       let MenuEmbed = new Discord.MessageEmbed()
       .setColor(es.color)
-      .setAuthor(client.la[ls].cmds.info.botfaq.menuembed.title, client.user.displayAvatarURL(), "https://team.aracdes.ga/discord")
+      .setAuthor(client.la[ls].cmds.info.botfaq.menuembed.title, client.user.displayAvatarURL(), "https://discord.gg/team-arcades-935157109761388554")
       .setDescription(client.la[ls].cmds.info.botfaq.menuembed.description)
       //send the menu msg
       await interaction?.reply({embeds: [MenuEmbed], components: [Selection], ephemeral: true})
@@ -103,7 +103,7 @@ module.exports = {
         let menuoptiondata = menuoptions.find(v=>v.value.substring(0, 25) == interaction?.values[0])
         interaction?.reply({embeds: [new Discord.MessageEmbed()
         .setColor(es.color)
-        .setAuthor(client.la[ls].cmds.info.botfaq.menuembed.title, client.user.displayAvatarURL(), "https://team.aracdes.ga/discord")
+        .setAuthor(client.la[ls].cmds.info.botfaq.menuembed.title, client.user.displayAvatarURL(), "https://discord.gg/team-arcades-935157109761388554")
         .setDescription(menuoptiondata.replymsg)], ephemeral: true});
       }
       //Event
@@ -120,9 +120,9 @@ module.exports = {
 };
 /**
   * @INFO
-  * Bot Coded by LuisMisaki#4165 | https://team.aracdes.ga/discord
+  * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
   * @INFO
-  * Work for Milrato Development | https://team.arcades.ga
+  * Work for Milrato Development | https://teamarcades.xyz
   * @INFO
   * Please mention him / Milrato Development, when using this Code!
   * @INFO

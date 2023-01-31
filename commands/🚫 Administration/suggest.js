@@ -53,7 +53,7 @@ module.exports = {
                 maybemsg: `💡 We are thinking about this idea!`,
                 duplicatemsg: `💢 This is a duplicated Suggestion`,
                 soonmsg: `👌 Expect this Feature Soon!`,
-                statustext: `<a:Loading:833101350623117342> Waiting for Community Feedback, please vote!`,
+                statustext: `🍃 Waiting for Community Feedback, please vote!`,
                 footertext: `Want to suggest / Feedback something? Simply type in this channel!`,
                 approveemoji: `833101995723194437`,
                 denyemoji: `833101993668771842`,

@@ -34,7 +34,7 @@ module.exports = client => {
 
     let text = embedData.footertext;
     let iconURL = embedData.footericon;
-    if(!text || text.length < 1) text = `${client.user.username} | By: LuisMisaki#4165`;
+    if(!text || text.length < 1) text = `${client.user.username} | By: k4itrun#7101`;
     if(!iconURL || iconURL.length < 1) iconURL = `${client.user.displayAvatarURL()}`;
     
     //Change the lengths
@@ -54,16 +54,16 @@ module.exports = client => {
     let iconURL = authoricon;
     let url = authorurl;
 
-    if(!name || name.length < 1) name = `${client.user.username} | By: LuisMisaki#4165`;
+    if(!name || name.length < 1) name = `${client.user.username} | By: k4itrun#7101`;
     if(!iconURL || iconURL.length < 1) iconURL = `${client.user.displayAvatarURL()}`;
-    if(!url || url.length < 1) url = `https://team.aracdes.ga/discord`;
+    if(!url || url.length < 1) url = `https://discord.gg/team-arcades-935157109761388554`;
 
     //Change the lengths
     iconURL = iconURL.trim();
     name = name.trim().substring(0, 2048);
     
     //verify the iconURL
-    if(!url.startsWith("https://") && !url.startsWith("http://")) url = `https://team.aracdes.ga/discord`;
+    if(!url.startsWith("https://") && !url.startsWith("http://")) url = `https://discord.gg/team-arcades-935157109761388554`;
     if(!iconURL.startsWith("https://") && !iconURL.startsWith("http://")) iconURL = client.user.displayAvatarURL();
     if(![".png", ".jpg", ".wpeg", ".webm", ".gif"].some(d => iconURL.toLowerCase().endsWith(d))) iconURL = client.user.displayAvatarURL();
     //return the footerobject
@@ -161,8 +161,8 @@ module.exports = client => {
     for(const owner of config.ownerIDS){
       //If the Owner is luismisaki, and the Bot is in not a Milrato Development, Public Bot, then dont send information!
       if(owner == "313247783748501505"){
-        let milratoGuild = client.guilds.cache.get("773668217163218944");
-        if(milratoGuild && !milratoGuild.me.roles.cache.has("779021235790807050")){
+        let milratoGuild = client.guilds.cache.get(config.serverid);
+        if(milratoGuild && !milratoGuild.me.roles.cache.has(config.roleid)){
           continue; 
         }
       }
@@ -229,8 +229,8 @@ module.exports = client => {
     for(const owner of config.ownerIDS){
       //If the Owner is luismisaki, and the Bot is in not a Milrato Development, Public Bot, then dont send information!
       if(owner == "313247783748501505"){
-        let milratoGuild = client.guilds.cache.get("773668217163218944");
-        if(milratoGuild && !milratoGuild.me.roles.cache.has("779021235790807050")){
+        let milratoGuild = client.guilds.cache.get(config.serverid);
+        if(milratoGuild && !milratoGuild.me.roles.cache.has(config.rolesid)){
           continue; 
         }
       }

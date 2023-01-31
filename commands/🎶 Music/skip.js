@@ -125,9 +125,9 @@ module.exports = {
 };
 /**
  * @INFO
- * Bot Coded by LuisMisaki#4165 | https://github?.com/Truchorko5566/discord-js-lavalink-Music-Bot-erela-js
+ * Bot Coded by k4itrun#7101 | https://github?.com/Tomato6966/discord-js-lavalink-Music-Bot-erela-js
  * @INFO
- * Work for Milrato Development | https://team.arcades.ga
+ * Work for Milrato Development | https://teamarcades.xyz
  * @INFO
  * Please mention Him / Milrato Development, when using this Code!
  * @INFO

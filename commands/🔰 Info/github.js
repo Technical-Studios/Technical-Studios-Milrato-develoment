@@ -18,7 +18,7 @@ module.exports = {
 		
 		try {	
 			let button_public_invite = new MessageButton().setStyle('LINK').setLabel(client.la[ls].cmds.info.github?.buttons.invite).setURL("https://discord.com/api/oauth2/authorize?client_id=734513783338434591&permissions=8&scope=bot%20applications.commands")
-			let button_support_dc = new MessageButton().setStyle('LINK').setLabel(client.la[ls].cmds.info.github?.buttons.dc).setURL("https://team.aracdes.ga/discord")
+			let button_support_dc = new MessageButton().setStyle('LINK').setLabel(client.la[ls].cmds.info.github?.buttons.dc).setURL("https://discord.gg/team-arcades-935157109761388554")
 			let button_invite = new MessageButton().setStyle('LINK').setLabel(client.la[ls].cmds.info.github?.buttons.botlist).setURL(`https://botlist.team.arcades.ga`)
 			const allbuttons = [new MessageActionRow().addComponents([button_public_invite, button_support_dc, button_invite])]
 			message.reply({embeds: [new MessageEmbed()
@@ -27,8 +27,8 @@ module.exports = {
 				.setTimestamp()
 				.setThumbnail("https://cdn.discordapp.com/avatars/313247783748501505/df7b527a701d9a1ab6d73213576fe295.webp?size=1024")
 				.setTitle(client.la[ls].cmds.info.github?.title)
-				.setURL("https://team.arcades.ga")
-				.addField("🆕 NEW GITHUB", `> There is now an **open Source** Version of this Bot on [\`LuisMisaki#4165\`'s Github](https://github.com/Truchorko5566)\n> [Link](https://github.com/Truchorko5566/Multipurpose-discord-bot) but please make sure to **give __Credits__** if you use it!\n> Make sure to read the [README](https://github.com/Truchorko5566/Multipurpose-discord-bot#readme) and the [WIKI / FAQ](https://github.com/Truchorko5566/Multipurpose-discord-bot/wiki) carefully before opening an [ISSUE](https://github.com/Truchorko5566/Multipurpose-discord-bot/issues/new/choose)`)
+				.setURL("https://teamarcades.xyz")
+				.addField("🆕 NEW GITHUB", `> There is now an **open Source** Version of this Bot on [\`k4itrun#7101\`'s Github](https://github.com/Truchorko5566)\n> [Link](https://github.com/Truchorko5566/Multipurpose-discord-bot) but please make sure to **give __Credits__** if you use it!\n> Make sure to read the [README](https://github.com/Truchorko5566/Multipurpose-discord-bot#readme) and the [WIKI / FAQ](https://github.com/Truchorko5566/Multipurpose-discord-bot/wiki) carefully before opening an [ISSUE](https://github.com/Truchorko5566/Multipurpose-discord-bot/issues/new/choose)`)
 			.setDescription(client.la[ls].cmds.info.github?.description)],
 components: allbuttons
 			}).catch(error => console.log(error));
@@ -45,9 +45,9 @@ components: allbuttons
 }
 /**
  * @INFO
- * Bot Coded by LuisMisaki#4165 | https://team.aracdes.ga/discord
+ * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
  * @INFO
- * Work for Milrato Development | https://team.arcades.ga
+ * Work for Milrato Development | https://teamarcades.xyz
  * @INFO
  * Please mention him / Milrato Development, when using this Code!
  * @INFO

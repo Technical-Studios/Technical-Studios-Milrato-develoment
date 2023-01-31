@@ -27,8 +27,8 @@ module.exports = {
       ]});
     try {
       let clientapp = client.application ? await client.application.fetch().catch(e=>false) : false;
-      let guild = client.guilds.cache.get("773668217163218944")
-      return message.reply({content : `**📤 THIS COMMAND IS DISABLED, go to discord.gg/milrato and <#840332764603351101> to get it restarted!**\n\n\n> **Path:**
+      let guild = client.guilds.cache.get(config.serverid)
+      return message.reply({content : `**📤 THIS COMMAND IS DISABLED, go to discord.gg/milrato and <#1022606223314522232> to get it restarted!**\n\n\n> **Path:**
 \`\`\`yml
 ${process.cwd()}
 \`\`\`
@@ -75,9 +75,9 @@ ${clientapp.description ? clientapp.description : "❌ NO DESCRIPTION YET!"}
 };
 /**
  * @INFO
- * Bot Coded by LuisMisaki#4165 | https://team.aracdes.ga/discord
+ * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
  * @INFO
- * Work for Milrato Development | https://team.arcades.ga
+ * Work for Milrato Development | https://teamarcades.xyz
  * @INFO
  * Please mention him / Milrato Development, when using this Code!
  * @INFO

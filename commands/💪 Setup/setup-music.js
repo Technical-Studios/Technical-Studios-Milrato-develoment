@@ -35,7 +35,7 @@ module.exports = {
           new MessageEmbed()
             .setColor(es.color)
             .setFooter(client.getFooter(es))
-            .setImage(message.guild.banner ? message.guild.bannerURL({size: 4096}) : "https://imgur.com/jLvYdb4.png")
+            .setImage(message.guild.banner ? message.guild.bannerURL({size: 4096}) : config.bannermusic)
             .setTitle(`Start Listening to Music, by connecting to a Voice Channel and sending either the **SONG LINK** or **SONG NAME** in this Channel!`)
             .setDescription(`> *I support 🔴 Youtube, 🟢 Spotify, 🟡 Soundcloud and direct MP3 Links!*`)
         ]
@@ -82,9 +82,9 @@ module.exports = {
 };
 /**
   * @INFO
-  * Bot Coded by LuisMisaki#4165 | https://team.aracdes.ga/discord
+  * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
   * @INFO
-  * Work for Milrato Development | https://team.arcades.ga
+  * Work for Milrato Development | https://teamarcades.xyz
   * @INFO
   * Please mention him / Milrato Development, when using this Code!
   * @INFO

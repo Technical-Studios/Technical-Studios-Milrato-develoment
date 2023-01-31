@@ -53,9 +53,9 @@ module.exports = {
 }
 /**
  * @INFO
- * Bot Coded by LuisMisaki#4165 | https://team.arcades.gae
+ * Bot Coded by k4itrun#7101 | https://teamarcades.xyze
  * @INFO
- * Work for Milrato Development | https://team.aracdes.ga/discord
+ * Work for Milrato Development | https://discord.gg/team-arcades-935157109761388554
  * @INFO
  * Please mention Him / Milrato Development, when using this Code!
  * @INFO

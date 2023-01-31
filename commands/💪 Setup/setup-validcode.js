@@ -69,7 +69,7 @@ module.exports = {
           .setColor(es.color)
           .setAuthor("Valid-Code System Setup", 
           "https://cdn.discordapp.com/emojis/858405056238714930.gif?v=1",
-          "https://team.aracdes.ga/discord")
+          "https://discord.gg/team-arcades-935157109761388554")
           .setDescription(eval(client.la[ls]["cmds"]["setup"]["setup-validcode"]["variable1"]))
         let used1 = false;
         //send the menu msg
@@ -133,9 +133,9 @@ module.exports = {
 };
 /**
  * @INFO
- * Bot Coded by LuisMisaki#4165 | https://team.aracdes.ga/discord
+ * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
  * @INFO
- * Work for Milrato Development | https://team.arcades.ga
+ * Work for Milrato Development | https://teamarcades.xyz
  * @INFO
  * Please mention him / Milrato Development, when using this Code!
  * @INFO

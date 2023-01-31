@@ -22,7 +22,7 @@ module.exports = {
       await interaction?.reply({embeds: [new MessageEmbed()
         .setColor(es.color)
         .setFooter(client.getFooter("It could take up to 30 Seconds ...", client.user.displayAvatarURL()))
-        .setAuthor(client.getAuthor(handlemsg(client.la[ls].cmds.info.commandcount.tempmsg), "https://cdn.discordapp.com/emojis/756773010123522058.gif", "https://team.aracdes.ga/discord"))
+        .setAuthor(client.getAuthor(handlemsg(client.la[ls].cmds.info.commandcount.tempmsg), "https://cdn.discordapp.com/emojis/756773010123522058.gif", "https://discord.gg/team-arcades-935157109761388554"))
       ], ephemeral: true})
       let lines = 0
       let letters = 0
@@ -71,9 +71,9 @@ module.exports = {
 }
 /**
  * @INFO
- * Bot Coded by LuisMisaki#4165 | https://team.aracdes.ga/discord
+ * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
  * @INFO
- * Work for Milrato Development | https://team.arcades.ga
+ * Work for Milrato Development | https://teamarcades.xyz
  * @INFO
  * Please mention him / Milrato Development, when using this Code!
  * @INFO

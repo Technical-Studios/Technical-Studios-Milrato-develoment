@@ -1,22 +1,22 @@
 
-var {
-    Manager
-  } = require("erela.js"),
+require('dotenv').config();
+var { Manager } = require("erela.js"),
   
     Spotify = require("erela.js-spotify"),
     Deezer = require("erela.js-deezer"),
     Facebook = require("erela.js-facebook"),
-    config = require(`${process.cwd()}/botconfig/config.json`),
-    clientID = process.env.clientID || config.spotify.clientID,
-    clientSecret = process.env.clientSecret || config.spotify.clientSecret;
+    erela = require(`${process.cwd()}/botconfig/erela.json`),
+  
+    clientID = process.env.clientID || erela.spotify.clientID,
+    clientSecret = process.env.clientSecret || erela.spotify.clientSecret;
   module.exports = (client) => {
-      if (!clientID || !clientSecret || clientID.length < 5 || clientSecret.length < 5) {
+      if (!clientID || !clientSecret) {
         client.manager = new Manager({
-          nodes: collect(config.clientsettings.nodes),
-          plugins: [
+          nodes: erela.clientsettings.nodes,
+          /*plugins: [
             new Deezer(),
             new Facebook(),
-          ],
+          ],*/
           send(id, payload) {
             var guild = client.guilds.cache.get(id);
             if (guild) guild.shard.send(payload);
@@ -24,15 +24,15 @@ var {
         });
       } else {
         client.manager = new Manager({
-          nodes: collect(config.clientsettings.nodes),
-          plugins: [
+          nodes: erela.clientsettings.nodes,
+          /*plugins: [
             new Spotify({
               clientID, //get a clientid from there: https://developer.spotify.com/dashboard
               clientSecret
             }),
             new Deezer(),
             new Facebook(),
-          ],
+          ],*/
           send(id, payload) {
             var guild = client.guilds.cache.get(id);
             if (guild) guild.shard.send(payload);
@@ -48,33 +48,11 @@ var {
   };
   /**
    * @INFO
-   * Bot Coded by LuisMisaki#4165 | https://github?.com/Truchorko5566/discord-js-lavalink-Music-Bot-erela-js
+   * Bot Coded by Truchorko#5566 | https://github?.com/Truchorko5566/discord-js-lavalink-Music-Bot-erela-js
    * @INFO
-   * Work for Milrato Development | https://team.arcades.ga
+   * Work for Team Arcades | https://team.arcades.ga
    * @INFO
-   * Please mention Him / Milrato Development, when using this Code!
+   * Please mention Him / Team Arcades, when using this Code!
    * @INFO
    */
   
-
-  function collect(node) {
-    return node.map(x => {
-        
-      if (!x.host) throw new RangeError('"host" must be provided');
-      if (!x.password) throw new RangeError('"password" must be provided');
-      if (typeof x.port !== 'number') throw new RangeError('"port" must be a number');
-      if (x.retryAmount && typeof x.retryAmount !== 'number') throw new RangeError('Retry amount must be a number');
-      if (x.retryDelay && typeof x.retryDelay !== 'number') throw new RangeError('Retry delay must be a number');
-      if (x.secure && typeof x.secure !== 'boolean') throw new RangeError('Secure must be a boolean');
-
-      return {
-          host: x.host,
-          password: x.password ? x.password : 'youshallnotpass',
-          port: x.port && !isNaN(x.port) ? Number(x.port) : 2333,
-          identifier: x.identifier || x.host,
-          retryAmount: x.retryAmount ? Number(x.retryAmount) : 5,
-          retryDelay: x.retryDelay ? Number(x.retryDelay) : 5000,
-          secure: x.secure ? x.secure : false
-      };
-    });
-}

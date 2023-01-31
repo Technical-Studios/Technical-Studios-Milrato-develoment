@@ -1,4 +1,4 @@
-# MilratoV12
+# Milrato
 <a href="https://team.arcades.ga/discord">
     <img src="https://discord.com/api/guilds/935157109761388554/widget.png?style=banner2">
 </a>
@@ -123,4 +123,4 @@ Nuestra [**Comunidad**](https://team.arcades.ga/discord) de discord nos dedicamo
 # Créditos
 
 > Si consideras usar este Bot, ¡asegúrate de darme crédito!
-> Ejemplo: `Bot creado por [Team_Arcades](https://team.arcades.ga/discord) pero modificado por [modificador/tu nombre](https://discord.gg/)`
+> Ejemplo: `Bot creado por [Milrato](https://discord.gg/milrato) pero modificado por [modificador/tu nombre](https://discord.gg/)`

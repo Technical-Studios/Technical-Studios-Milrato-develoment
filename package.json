@@ -1,8 +1,12 @@
 {
-  "name": "milratp_v13",
+  "name": "clan_bot",
   "version": "11.0.0",
-  "description": "A Discord Bot made by: LuisMisaki#4165",
+  "description": "v13",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
   "dependencies": {
     "@discordjs/builders": "^0.12.0",
     "@discordjs/opus": "^0.7.0",
@@ -48,39 +52,5 @@
     "weky": "^3.1.8",
     "wrap-ansi": "^8.0.1",
     "yargs": "^17.3.1"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
-  },
-  "author": "LuisMisaki#4165",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Truchorko5566/Multipurpose-discord-bot"
-  },
-  "keywords": [
-    "lavalink",
-    "music",
-    "discord",
-    "discordjs",
-    "erela.js",
-    "music",
-    "bot",
-    "lava",
-    "lava",
-    "music",
-    "audio",
-    "mp3",
-    "radio",
-    "radiostation",
-    "stream",
-    "premium",
-    "reaction",
-    "reactions"
-  ],
-  "bugs": {
-    "url": "https://github.com/Truchorko5566/Multipurpose-discord-bot/issues"
-  },
-  "homepage": "https://milrato.dev"
+  }
 }

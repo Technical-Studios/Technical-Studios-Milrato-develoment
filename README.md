@@ -7,7 +7,7 @@ Nuestra [**Comunidad**](https://teamarcades.xyz/discord) de discord nos dedicamo
 
 # 📑 Traducion
 
-**NOTA:** Para las personas que quieren **traducir** este bot al 100% les e ayudó con un 50% si se puede decir, en **[`languages/sp.json`]()** esta el 90% **Traducido al Español** usando el **Traductor** de **Google** ya que pueden ver errores de ortografía y de textos, esto ustedes lo pueden solucionar solo se que fue de gran ayuda traducir +5000 lineas para este codigo!)
+**NOTA:** Para las personas que quieren **traducir** este bot al 100% les e ayudó con un 50% si se puede decir, en **[`languages/sp.json`](./languages/sp.json)** esta el 90% **Traducido al Español** usando el **Traductor** de **Google** ya que pueden ver errores de ortografía y de textos, esto ustedes lo pueden solucionar solo se que fue de gran ayuda traducir +5000 lineas para este codigo!)
  
 ## ⚔ Emojis
 

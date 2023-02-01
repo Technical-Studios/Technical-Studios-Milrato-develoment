@@ -1,9 +1,9 @@
-# Milrato
+# ¡Servidor de Discord!
 <a href="https://teamarcades.xyz/discord">
     <img src="https://discord.com/api/guilds/935157109761388554/widget.png?style=banner2">
 </a>
 
-Nuestra [**Comunidad**](https://teamarcades.xyz/discord) de discord nos dedicamos a codificar y a traer nuevos codigos fuentes [únase a mi servidor de Discord](https://teamarcades.xyz/discord) para obtener un Bot personalizado alojado para usted.
+Nuestro [**Servidor**](https://teamarcades.xyz/discord) de Discord nos dedicamos a codificar y publicar nuevos codigos fuentes [únase al servidor de Discord](https://teamarcades.xyz/discord) para obtener un Bot personalizado o tambien una pagina web totalmente Gratis.
 
 # 📑 Traducion
 

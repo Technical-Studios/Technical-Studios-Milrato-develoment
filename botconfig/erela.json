@@ -15,7 +15,6 @@
        "clientSecret": "053469ffeb3844079fab734ebf3090c2"
      },
   
-     
      "settings": {
         "COMMENT": "time_delay 0 === insta leave",
         "leaveOnEmpty_Channel": {

@@ -15,7 +15,7 @@ module.exports = {
 		const { guild } = member;
 		
 		try {	
-			let button_public_invite = new MessageButton().setStyle('LINK').setLabel(client.la[ls].cmds.info.developer.buttons.invite).setURL("https://discord.com/api/oauth2/authorize?client_id=734513783338434591&permissions=8&scope=bot%20applications.commands")
+			let button_public_invite = new MessageButton().setStyle('LINK').setLabel(client.la[ls].cmds.info.developer.buttons.invite).setURL("https://discord.com/api/oauth2/authorize?client_id=960043017954283591&permissions=8&scope=bot%20applications.commands")
 			let button_support_dc = new MessageButton().setStyle('LINK').setLabel(client.la[ls].cmds.info.developer.buttons.dc).setURL("https://discord.gg/team-arcades-935157109761388554")
 			let button_invite = new MessageButton().setStyle('LINK').setLabel(client.la[ls].cmds.info.developer.buttons.botlist).setURL(`https://botlist.team.arcades.ga`)
 			const allbuttons = [new MessageActionRow().addComponents([button_public_invite, button_support_dc, button_invite])]
@@ -42,7 +42,7 @@ components: allbuttons
 }
 /**
  * @INFO
- * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
+ * Bot Coded by Truchorko_ | https://discord.gg/team-arcades-935157109761388554
  * @INFO
  * Work for Milrato Development | https://teamarcades.xyz
  * @INFO

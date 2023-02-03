@@ -237,7 +237,7 @@ module.exports = {
               }
            }).filter(Boolean))
           let Selection2 = new MessageSelectMenu()
-            .setPlaceholder('Click me to setup the (2/3) Systems [C-R]!').setCustomId('MenuSelection') 
+            .setPlaceholder('Click me to setup the (2/3) Systems [C-R]!').setCustomId('MenuSelection2') 
             .setMaxValues(1).setMinValues(1)
             .addOptions(
             menuoptions.map((option, index) => {
@@ -252,7 +252,7 @@ module.exports = {
               }
            }).filter(Boolean))
           let Selection3 = new MessageSelectMenu()
-            .setPlaceholder('Click me to setup the (3/3) Systems [R-Z]!').setCustomId('MenuSelection') 
+            .setPlaceholder('Click me to setup the (3/3) Systems [R-Z]!').setCustomId('MenuSelection3') 
             .setMaxValues(1).setMinValues(1)
             .addOptions(
             menuoptions.map((option, index) => {
@@ -273,22 +273,12 @@ module.exports = {
             "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/57/gear_2699.png",
             "https://discord.gg/team-arcades-935157109761388554")
             .setDescription(eval(client.la[ls]["cmds"]["setup"]["setup"]["variable1"]))
-          let MenuEmbed2 = new Discord.MessageEmbed()
-            .setColor(es.color)
-            .setAuthor("Setup-Systems | (2/3) [C-R]", 
-            "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/57/gear_2699.png",
-            "https://discord.gg/team-arcades-935157109761388554")
-            .setDescription(eval(client.la[ls]["cmds"]["setup"]["setup"]["variable2"]))
-          let MenuEmbed3 = new Discord.MessageEmbed()
-            .setColor(es.color)
-            .setAuthor("Setup-Systems | (3/3) [R-Z]", 
-            "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/57/gear_2699.png",
-            "https://discord.gg/team-arcades-935157109761388554")
-            .setDescription(eval(client.la[ls]["cmds"]["setup"]["setup"]["variable3"]))
           //send the menu msg
-          let menumsg1 = await message.reply({embeds: [MenuEmbed1], components: [new MessageActionRow().addComponents(Selection1)]})
-          let menumsg2 = await message.reply({embeds: [MenuEmbed2], components: [new MessageActionRow().addComponents(Selection2)]})
-          let menumsg3 = await message.reply({embeds: [MenuEmbed3], components: [new MessageActionRow().addComponents(Selection3)]})
+          let menumsg1 = await message.reply({embeds: [MenuEmbed1], components: [
+            new MessageActionRow().addComponents(Selection1),
+            new MessageActionRow().addComponents(Selection2),
+            new MessageActionRow().addComponents(Selection3)
+          ]})
           //function to handle the menuselection
           function menuselection(menu) {
             let menuoptiondata = menuoptions.find(v => v.value == menu?.values[0])
@@ -301,20 +291,6 @@ module.exports = {
             if (menu?.message.id === menumsg1.id) {
               if (menu?.user.id === cmduser.id) {
                 menumsg1.edit({components: [], embeds: menumsg1.embeds}).catch(() => {});
-                menuselection(menu);
-              }
-              else menu?.reply({content: `📤 You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
-            }
-            if (menu?.message.id === menumsg2.id) {
-              if (menu?.user.id === cmduser.id) {
-                menumsg2.edit({components: [], embeds: menumsg2.embeds}).catch(() => {});
-                menuselection(menu);
-              }
-              else menu?.reply({content: `📤 You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
-            }
-            if (menu?.message.id === menumsg3.id) {
-              if (menu?.user.id === cmduser.id) {
-                menumsg3.edit({components: [], embeds: menumsg3.embeds}).catch(() => {});
                 menuselection(menu);
               }
               else menu?.reply({content: `📤 You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
@@ -337,7 +313,7 @@ module.exports = {
 };
 /**
  * @INFO
- * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
+ * Bot Coded by Truchorko_ | https://discord.gg/team-arcades-935157109761388554
  * @INFO
  * Work for Milrato Development | https://teamarcades.xyz
  * @INFO

@@ -55,7 +55,7 @@ const { handlemsg } = require(`${process.cwd()}/handlers/functions`);
 };
 /**
  * @INFO
- * Bot Coded by k4itrun#7101 | https://github?.com/Tomato6966/discord-js-lavalink-Music-Bot-erela-js
+ * Bot Coded by Truchorko_ | https://github?.com/Tomato6966/discord-js-lavalink-Music-Bot-erela-js
  * @INFO
  * Work for Milrato Development | https://teamarcades.xyz
  * @INFO

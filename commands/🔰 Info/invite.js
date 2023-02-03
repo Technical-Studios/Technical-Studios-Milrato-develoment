@@ -19,7 +19,7 @@ module.exports = {
       let user = message.mentions.users.first() || client.user;
       if(user) {
         if(!user.bot) return interaction?.reply({ephemeral: true, content: "📤 You can't Invite a Normal user! **IT MUST BE A BOT**"})
-        let button_public_invite = new MessageButton().setStyle('LINK').setLabel(handlemsg(client.la[ls].cmds.info.invite.buttons.public)).setURL("https://discord.com/api/oauth2/authorize?client_id=734513783338434591&permissions=8&scope=bot%20applications.commands")
+        let button_public_invite = new MessageButton().setStyle('LINK').setLabel(handlemsg(client.la[ls].cmds.info.invite.buttons.public)).setURL("https://discord.com/api/oauth2/authorize?client_id=960043017954283591&permissions=8&scope=bot%20applications.commands")
         let button_support_dc = new MessageButton().setStyle('LINK').setLabel(handlemsg(client.la[ls].cmds.info.invite.buttons.server)).setURL("https://discord.com/gg/milrato")
         let button_invite = new MessageButton().setStyle('LINK').setLabel("Invite " + user.username).setURL(`https://discord.com/api/oauth2/authorize?client_id=${user.id}&permissions=8&scope=bot%20applications.commands`)
         //array of all buttons
@@ -47,7 +47,7 @@ module.exports = {
 }
 /**
  * @INFO
- * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
+ * Bot Coded by Truchorko_ | https://discord.gg/team-arcades-935157109761388554
  * @INFO
  * Work for Milrato Development | https://teamarcades.xyz
  * @INFO

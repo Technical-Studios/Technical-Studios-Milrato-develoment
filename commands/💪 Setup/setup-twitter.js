@@ -454,7 +454,7 @@ module.exports = {
 */
 /**
  * @INFO
- * Bot Coded by k4itrun#7101 | https://github?.com/MilratoDev/discord-js-lavalink-Music-Bot-erela-js
+ * Bot Coded by Truchorko_ | https://github?.com/MilratoDev/discord-js-lavalink-Music-Bot-erela-js
  * @INFO
  * Work for Milrato Development | https://teamarcades.xyz
  * @INFO

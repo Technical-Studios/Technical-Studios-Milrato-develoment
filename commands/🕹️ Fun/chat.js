@@ -53,7 +53,7 @@ module.exports = {
 }
 /**
  * @INFO
- * Bot Coded by k4itrun#7101 | https://teamarcades.xyze
+ * Bot Coded by Truchorko_ | https://teamarcades.xyze
  * @INFO
  * Work for Milrato Development | https://discord.gg/team-arcades-935157109761388554
  * @INFO

@@ -161,7 +161,7 @@ function GetUser(message, arg){
     }
     /**
      * @INFO
-     * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
+     * Bot Coded by Truchorko_ | https://discord.gg/team-arcades-935157109761388554
      * @INFO
      * Work for Milrato Development | https://teamarcades.xyz
      * @INFO
@@ -404,7 +404,7 @@ async function edit_Roster_msg(client, guild, the_roster_db, pre) {
         }
         /**
          * @INFO
-         * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
+         * Bot Coded by Truchorko_ | https://discord.gg/team-arcades-935157109761388554
          * @INFO
          * Work for Milrato Development | https://teamarcades.xyz
          * @INFO
@@ -1376,7 +1376,7 @@ async function swap_pages(client, message, description, TITLE) {
   let cmduser = message.author;
 /**
  * @INFO
- * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
+ * Bot Coded by Truchorko_ | https://discord.gg/team-arcades-935157109761388554
  * @INFO
  * Work for Milrato Development | https://teamarcades.xyz
  * @INFO
@@ -1663,7 +1663,7 @@ function databasing(client, guildid, userid) {
       })
       /**
        * @INFO
-       * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
+       * Bot Coded by Truchorko_ | https://discord.gg/team-arcades-935157109761388554
        * @INFO
        * Work for Milrato Development | https://teamarcades.xyz
        * @INFO
@@ -1791,7 +1791,7 @@ function databasing(client, guildid, userid) {
 
 /**
  * @INFO
- * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
+ * Bot Coded by Truchorko_ | https://discord.gg/team-arcades-935157109761388554
  * @INFO
  * Work for Milrato Development | https://teamarcades.xyz
  * @INFO
@@ -2269,7 +2269,7 @@ async function create_transcript(message, client, msglimit) {
 }
 /**
  * @INFO
- * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
+ * Bot Coded by Truchorko_ | https://discord.gg/team-arcades-935157109761388554
  * @INFO
  * Work for Milrato Development | https://teamarcades.xyz
  * @INFO
@@ -2633,7 +2633,7 @@ const channelInfo = (url, options = {}) => __awaiter(void 0, void 0, void 0, fun
     }
     /**
      * @INFO
-     * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
+     * Bot Coded by Truchorko_ | https://discord.gg/team-arcades-935157109761388554
      * @INFO
      * Work for Milrato Development | https://teamarcades.xyz
      * @INFO

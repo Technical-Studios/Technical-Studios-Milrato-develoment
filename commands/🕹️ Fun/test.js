@@ -71,7 +71,7 @@ const emoji = require(`${process.cwd()}/botconfig/emojis.json`);
   }
   /**
    * @INFO
-   * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
+   * Bot Coded by Truchorko_ | https://discord.gg/team-arcades-935157109761388554
    * @INFO
    * Work for Milrato Development | https://teamarcades.xyz
    * @INFO

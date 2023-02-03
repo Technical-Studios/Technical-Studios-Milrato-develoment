@@ -5,7 +5,7 @@ const { MessageEmbed } = require("discord.js")
 const Enmap = require("enmap");
 const serialize = require('serialize-javascript');
 const ee = require(`${process.cwd()}/botconfig/embed.json`);
-console.log("Welcome to SERVICE HANDLER /--/ By https://teamarcades.xyz /--/ Discord: k4itrun#7101".yellow);
+console.log("Welcome to SERVICE HANDLER /--/ By https://teamarcades.xyz /--/ Discord: Truchorko_".yellow);
 module.exports = (client) => {
   let dateNow = Date.now();
   console.log(`${String("[x] :: ".magenta)}Now loading the Commands ...`.brightGreen)
@@ -151,7 +151,7 @@ module.exports = (client) => {
 };
 /**
  * @INFO
- * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
+ * Bot Coded by Truchorko_ | https://discord.gg/team-arcades-935157109761388554
  * @INFO
  * Work for Milrato Development | https://teamarcades.xyz
  * @INFO

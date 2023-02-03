@@ -39,7 +39,7 @@ module.exports = {
             .addField(client.la[ls].cmds.info.botinfo.field1.title, handlemsg(client.la[ls].cmds.info.botinfo.field1.value, {totalGuilds: totalGuilds, totalMembers: totalMembers, connections: connectedchannelsamount, connectedchannelsamount: connectedchannelsamount}), true)
             .addField(client.la[ls].cmds.info.botinfo.field2.title, `\`\`\`yml\nNode.js: ${process.version}\nDiscord.js: v${Discord.version}\nEnmap: v5.8.4\`\`\``, true)
             .addField(client.la[ls].cmds.info.botinfo.field3.title, handlemsg(client.la[ls].cmds.info.botinfo.field3.value, {cpu: percent.toFixed(2), ram: (process.memoryUsage().heapUsed/1024/1024).toFixed(2)}))
-            .addField(client.la[ls].cmds.info.botinfo.field4.title, `\`\`\`yml\nName: k4itrun#7101\nID: [313247783748501505]\`\`\``, true)
+            .addField(client.la[ls].cmds.info.botinfo.field4.title, `\`\`\`yml\nName: Truchorko_\nID: [313247783748501505]\`\`\``, true)
             .addField(client.la[ls].cmds.info.botinfo.field5.title, handlemsg(client.la[ls].cmds.info.botinfo.field5.value, {invitelink: `https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands`}))
             .setFooter(client.getFooter(es));
         tempmsg.edit({embeds: [botinfo]});
@@ -57,7 +57,7 @@ module.exports = {
 };
 /**
   * @INFO
-  * Bot Coded by k4itrun#7101 | https://discord.gg/team-arcades-935157109761388554
+  * Bot Coded by Truchorko_ | https://discord.gg/team-arcades-935157109761388554
   * @INFO
   * Work for Milrato Development | https://teamarcades.xyz
   * @INFO

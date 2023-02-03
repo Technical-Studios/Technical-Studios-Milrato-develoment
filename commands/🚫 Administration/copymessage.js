@@ -122,7 +122,7 @@ module.exports = {
 }
 /**
  * @INFO
- * Bot Coded by k4itrun#7101 | https://github?.com/Truchorko5566/Discord-Js-Handler-Template
+ * Bot Coded by Truchorko_ | https://github?.com/Truchorko5566/Discord-Js-Handler-Template
  * @INFO
  * Work for Milrato Development | https://teamarcades.xyz
  * @INFO

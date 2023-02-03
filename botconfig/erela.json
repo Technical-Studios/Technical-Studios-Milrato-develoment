@@ -1,15 +1,30 @@
 {
-    "spotify": {
-        "clientSecret": "053469ffeb3844079fab734ebf3090c2",
-        "clientID": "bf5ee2a72bae40ffadc71a47280e5ff9"
-    },
     "clientsettings": {
         "nodes": [
-            {
-                "host": "lava.link",
-                "port": 80,
-                "password": "sharding..."
-             }
+          {
+             "host": "erryhost.ga",
+             "port": 2333,
+             "password": "RockyTheBest",
+             "secure": false
+          }
         ]
-    }
-}
+     },
+  
+     "spotify": {
+       "clientID": "bf5ee2a72bae40ffadc71a47280e5ff9",
+       "clientSecret": "053469ffeb3844079fab734ebf3090c2"
+     },
+  
+     
+     "settings": {
+        "COMMENT": "time_delay 0 === insta leave",
+        "leaveOnEmpty_Channel": {
+           "enabled": true,
+           "time_delay": 60000
+        },
+        "LeaveOnEmpty_Queue": {
+           "enabled": true,
+           "time_delay": 60000
+        }
+     }
+ }

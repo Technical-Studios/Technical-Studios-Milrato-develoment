@@ -69,6 +69,10 @@ module.exports = (client) => {
       }
       
     })
+
+    .on("playerDisconnect", async (player) => {
+      if (player) return player.destroy()
+    })
     .on("trackStart", async (player, track) => {
       try {
         let edited = false;

@@ -55,8 +55,9 @@
                                 <input oninput="this.nextElementSibling.value = this.value" tyle="margin-top: -10px;" type="range" class="form-range" min="1" max="150" step="1" value="<%= botClient.settings.get(guild.id, 'defaultvolume')%>" name="defaultvolume" id="defaultvolume">
                                 Current Volume: <output><%= botClient.settings.get(guild.id, 'defaultvolume')%></output>%
                                 
+                                <!--IN DEVELOPER-->
                                 
-                                <br><br>
+                                <!--<br><br>
                                 <h5 style="margin-bottom: 0.5rem; margin-top: 10px;color:#828cff">Dj-Roles:</h5>
                                 <p style="font-style: italic;" class="disabled">All Users with the Selected-Roles/Song-Requester are allowed to use Queue / Song Manipulation Commands. | Pick no Role, to disable!</p>
                                 <select 
@@ -95,7 +96,7 @@
                                             <%= botClient.settings.get(guild.id, "botchannel").includes(channel.id) ? "selected" : "" %>> #<%= channel.name%>
                                         </option>
                                     <% }) %>
-                                </select>
+                                </select> -->
                                 
                                 
                                 
@@ -117,7 +118,7 @@
                                             <%= botClient.settings.get(guild.id, "defaultfilters").includes(filter) ? "selected" : "" %>> <%= filter%>
                                         </option>
                                     <% }) %>
-                                </select>
+                                </select> 
                                 
                                 <br><br>
                                 <button type="submit" class="btn btn-success text-white" style="font-size: 40px;">
@@ -134,7 +135,7 @@
         <div class="card-footer" style="margin-top:15%;text-align: center;color: #828cff;">
           <hr style="width: 75%;background-color: #FFFFFF!important;color: #FFFFFF!important;border: 5px solid #FFFFFF!important;border-radius:25px;margin-left: 12%;">
           <h4 style="margin-top:5%;">
-            <img src="<%= botClient.user.displayAvatarURL({size: 4096}) %>" style="width: 4%;margin-top: -0.5%;"> <span style="font-size: 40px;"><%= botClient.user.username %> | Ultimate Music Experience</span>
+            <img src="<%= botClient.user.displayAvatarURL({size: 4096}) %>" style="width: 4%;margin-top: -0.5%;"> <span style="font-size: 40px;"><%= botClient.user.username %> | Multipurpose discord bot</span>
           </h4>
           <h5 style="text-align: center;">
             <a href="https://github.com/Truchorko5566/Milrato_develoment" target="_blank" style="font-size: 12px; color: #888a9b!important;text-decoration: none;">&copy; Copyright Musicium | All rights served.</a><br><br>

@@ -399,8 +399,8 @@ Command detail: \`${prefix}help <command>\``)
 
         collector.on('end', collected => {
           //array of all disabled buttons
-       //   let d_buttonRow = new MessageActionRow().addComponents([button_back.setDisabled(true), button_home.setDisabled(true), button_forward.setDisabled(true), button_tutorial])
-        //  const alldisabledbuttons = [d_buttonRow]
+         let d_buttonRow = new MessageActionRow().addComponents([button_back.setDisabled(true), button_home.setDisabled(true), button_forward.setDisabled(true), button_tutorial])
+        const alldisabledbuttons = [d_buttonRow]
           if (!edited) {
             edited = true;
             helpmsg.edit({ content: handlemsg(client.la[ls].cmds.info.help.timeended, { prefix: prefix }), embeds: [helpmsg.embeds[0]], components: alldisabledbuttons }).catch((e) => { })

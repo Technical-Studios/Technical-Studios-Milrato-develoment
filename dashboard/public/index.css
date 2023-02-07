@@ -175,7 +175,10 @@ form.d-flex button:hover {
 }
 
 
-
+img, svg {
+    vertical-align: middle;
+    border-radius: 16px;
+}
 .card {
     max-width: 18rem; 
     margin: 2rem; 

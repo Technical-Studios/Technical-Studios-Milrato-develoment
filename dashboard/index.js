@@ -153,10 +153,10 @@ module.exports = client => {
 
 
     //Logout the user and move him back to the main page
-    app.get(`/logout`, function (req, res) {
-      req.session.destroy(() => {
-        req.logout();
-        res.redirect(`/`);
+    app.get("/logout", function(req, res) {
+      req.logout(req.user, err => {
+        if(err) return next(err);
+        res.redirect("/");
       });
     });
 
@@ -352,6 +352,13 @@ module.exports = client => {
     //START THE WEBSITE ON THE DEFAULT PORT (80)
     const http = require(`http`).createServer(app);
     http.listen(settings.config.http.port, () => {
-        console.log(`[${settings.website.domain}]: HTTP-Website running on ${settings.config.http.port} port.`)
+      const stringlength = 69;
+      console.log("\n")
+      console.log(`     ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓`.bold.brightGreen)
+      console.log(`     ┃ `.bold.brightGreen + " ".repeat(-1+stringlength-` ┃ `.length)+ "┃".bold.brightGreen)
+      console.log(`     ┃ `.bold.brightGreen + `HTTP-Website running on ${settings.config.http.port} port.`.bold.brightGreen + " ".repeat(-1+stringlength-` ┃ `.length-`HTTP-Website running on ${settings.config.http.port} port.`.length)+ "┃".bold.brightGreen)
+      console.log(`     ┃ `.bold.brightGreen + ` /--/ [${settings.website.domain}] /--/ `.bold.brightGreen+ " ".repeat(-1+stringlength-` ┃ `.length-` /--/ [${settings.website.domain}] /--/ `.length)+ "┃".bold.brightGreen)
+      console.log(`     ┃ `.bold.brightGreen + " ".repeat(-1+stringlength-` ┃ `.length)+ "┃".bold.brightGreen)
+      console.log(`     ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛`.bold.brightGreen)
     });
 }

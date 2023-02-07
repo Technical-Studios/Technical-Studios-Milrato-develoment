@@ -361,8 +361,15 @@ module.exports = function (client) {
              */
             try {
                 let rankuser = the_rankuser || message.author;
-                if (!rankuser) return message.reply(eval(client.la[ls]["handlers"]["rankingjs"]["ranking"]["variable14"]));
-                let rankMember = message.guild.members.cache.get(rankuser.id) || await message.guild.members.fetch(rankuser.id).catch(() => {});
+                    if (!rankuser) return message.reply(eval(client.la[ls]["handlers"]["rankingjs"]["ranking"]["variable14"]));
+                    let rankMember = message.guild.members.cache.get(rankuser.id) || await message.guild.members.fetch(rankuser.id).catch(() => null);
+                    const status = rankMember ? rankMember.presence?.status || "offline" : "offline";
+                    const statusimgs = {
+                        "online": "https://cdn.discordapp.com/attachments/886876093418713129/959116532426866748/Online.png",
+                        "offline": "https://cdn.discordapp.com/attachments/886876093418713129/959116533236367410/offline.png",
+                        "idle": "https://cdn.discordapp.com/attachments/886876093418713129/959116532846301284/idle.png",
+                        "dnd": "https://cdn.discordapp.com/attachments/886876093418713129/959116532615639080/dnd.png"
+                    }
 
                 const key = `${message.guild.id}-${rankuser.id}`;
                 await databasing(rankuser);
@@ -637,6 +644,12 @@ module.exports = function (client) {
 
                 //restore ctx
                 ctx.restore();
+                /**
+                * DRAWING THE STATUS
+                */
+                const StatusSize = 195; StatusX = 867, StatusY = 960;
+                const statusImg = await Canvas.loadImage(statusimgs[status]);
+                ctx.drawImage(statusImg, StatusX, StatusY, StatusSize, StatusSize);
 
                 /**
                  * DRAWING THE USERNAME

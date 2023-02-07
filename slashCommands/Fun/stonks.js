@@ -8,7 +8,7 @@ const emoji = require(`${process.cwd()}/botconfig/emojis.json`);
 module.exports = {
   name: "stonks",
   aliases: [""],
-  category: "🕹️ Fun",
+  category: "🕹️Fun",
   description: "IMAGE CMD",
   usage: "stonks <TEXT>",
   type: "text",

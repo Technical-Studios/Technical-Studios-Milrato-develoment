@@ -83,7 +83,7 @@ module.exports = function (client) {
                   .setColor(es.color).setThumbnail(oldState.member.displayAvatarURL({dynamic:true}))
                   .setFooter(client.getFooter(es))
                   .setTitle(`The VC-OWNER \`${oldState.member.user.tag}\` left the VC! A new Random Owner got picked!`)
-                  .addField(`You now have access to all \`voice Commands\``, `> ${client.commands.filter((cmd) => cmd.category === "🎤 Voice").first().extracustomdesc.split(",").map(i => i?.trim()).join("︲")}`)
+                  .addField(`You now have access to all \`voice Commands\``, `> ${client.commands.filter((cmd) => cmd.category === "🎤Voice").first().extracustomdesc.split(",").map(i => i?.trim()).join("︲")}`)
                 ]}).catch(() => {})
               }).catch(() => {})
             } catch {
@@ -139,7 +139,7 @@ module.exports = function (client) {
                   .setColor(es.color).setThumbnail(oldState.member.displayAvatarURL({dynamic:true}))
                   .setFooter(client.getFooter(es))
                   .setTitle(`The VC-OWNER \`${oldState.member.user.tag}\` left the VC! A new Random Owner got picked!`)
-                  .addField(`You now have access to all \`voice Commands\``, `> ${client.commands.filter((cmd) => cmd.category === "🎤 Voice").first().extracustomdesc.split(",").map(i => i?.trim()).join("︲")}`)
+                  .addField(`You now have access to all \`voice Commands\``, `> ${client.commands.filter((cmd) => cmd.category === "🎤Voice").first().extracustomdesc.split(",").map(i => i?.trim()).join("︲")}`)
                 ]}).catch(() => {})
               }).catch(() => {})
             } catch {

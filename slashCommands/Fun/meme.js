@@ -19,7 +19,7 @@ const subreddits = [
 const path = require("path");
 module.exports = {
   name: path.parse(__filename).name,
-  category: "🕹️ Fun",
+  category: "🕹️Fun",
   usage: `${path.parse(__filename).name} [@User]`,
   type: "user",
   description: "*Image cmd in the style:* " + path.parse(__filename).name,

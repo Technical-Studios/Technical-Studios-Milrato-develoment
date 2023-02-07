@@ -7,7 +7,7 @@ const emoji = require(`${process.cwd()}/botconfig/emojis.json`);
 const { handlemsg } = require(`${process.cwd()}/handlers/functions`);
     module.exports = {
   name: `stop`,
-  category: `🎶 Music`,
+  category: `🎶Music`,
   aliases: [`leave`, "dis", "disconnect", "votestop", "voteleave", "votedis", "votedisconnect", "vstop", "vleave", "vdis", "vdisconnect"],
   description: `Stops current track and leaves the channel`,
   usage: `stop`,

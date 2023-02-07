@@ -8,7 +8,7 @@ const emoji = require(`${process.cwd()}/botconfig/emojis.json`);
 module.exports = {
   name: "stroke",
   aliases: [""],
-  category: "🕹️ Fun",
+  category: "🕹️Fun",
   description: "IMAGE CMD",
   usage: "stroke <TEXT>",
   type: "text",

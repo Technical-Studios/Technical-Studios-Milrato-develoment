@@ -9,7 +9,7 @@ const playermanager = require(`../../handlers/playermanager`);
 const { handlemsg } = require(`${process.cwd()}/handlers/functions`);
     module.exports = {
   name: `search`,
-  category: `🎶 Music`,
+  category: `🎶Music`,
   aliases: [`search`],
   description: `Searches a song from youtube`,
   usage: `search <Song / URL>`,

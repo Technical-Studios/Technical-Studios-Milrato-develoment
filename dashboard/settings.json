@@ -1,0 +1,23 @@
+{
+    "website" : {
+      "support": "https://discord.gg/team-arcades-935157109761388554",
+      "domain": "http://localhost"
+    },
+    "config": {
+        "http": {
+          "port": 80
+        },
+        "https": {
+            "paths": {
+                "privkey": "/etc/letsencrypt/live/localhost/privkey.pem",
+                "fullchain": "/etc/letsencrypt/live/localhost/fullchain.pem",
+                "chain": "/etc/letsencrypt/live/localhost/chain.pem"
+            },
+            "enabled": false,
+            "port": 443
+        },
+        "callback": "http://localhost/callback",
+        "clientID": "1064207094531756182",
+        "secret": "jKqIf_sp0ovS4nisViLXzROjFUOL02H9"
+    }
+  }

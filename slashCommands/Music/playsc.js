@@ -9,7 +9,7 @@ const playermanager = require(`../../handlers/playermanager`);
 const { handlemsg } = require(`${process.cwd()}/handlers/functions`);
     module.exports = {
   name: `playsc`,
-  category: `🎶 Music`,
+  category: `🎶Music`,
   aliases: [`psc`, `playsoundcloud`],
   description: `Plays a song from soundcloud`,
   usage: `playsc <Song / URL>`,

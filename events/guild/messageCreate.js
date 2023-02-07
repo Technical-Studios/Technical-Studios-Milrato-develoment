@@ -289,7 +289,7 @@ module.exports = async (client, message) => {
         //run the command with the parameters:  client, message, args, user, text, prefix,
         if (not_allowed) return;
         //Ensure the Complete Databasing Setup, only if the it's a Setup Command (PERFORMANCE IMPROVENEMTNS)
-        if(command.category === "💪 Setup"){
+        if(command.category === "💪Setup"){
           databasing(client, message.guild.id, message.author.id)
         }
         //Execute the Command

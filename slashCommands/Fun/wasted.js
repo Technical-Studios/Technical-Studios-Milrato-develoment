@@ -9,7 +9,7 @@ const emoji = require(`${process.cwd()}/botconfig/emojis.json`);
 module.exports = {
   name: "wasted",
   aliases: [""],
-  category: "🕹️ Fun",
+  category: "🕹️Fun",
   description: "IMAGE CMD",
   usage: "wasted @User",
   type: "user",

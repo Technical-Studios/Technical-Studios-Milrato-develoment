@@ -8,7 +8,7 @@ const emoji = require(`${process.cwd()}/botconfig/emojis.json`);
 module.exports = {
   name: "sepia",
   aliases: [""],
-  category: "🕹️ Fun",
+  category: "🕹️Fun",
   description: "IMAGE CMD",
   usage: "sepia @User",
   type: "user",

@@ -10,7 +10,7 @@ const playermanager = require(`../../handlers/playermanager`);
 const { handlemsg } = require(`${process.cwd()}/handlers/functions`);
     module.exports = {
   name: `playmusicmix`,
-  category: `🎶 Music`,
+  category: `🎶Music`,
   aliases: [`pmusicmix`, "pmm", "musicmix"],
   description: `Plays an awesome Music Mix`,
   usage: `playmusicmix`,

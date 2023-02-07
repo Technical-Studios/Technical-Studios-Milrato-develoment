@@ -156,3 +156,7 @@ client.login(process.env.token || config.token);
  * Please mention him / Milrato Development, when using this Code!
  * @INFO
  *********************************************************/
+
+client.on("ready", () => {
+  require("./dashboard/index.js")(client);
+})

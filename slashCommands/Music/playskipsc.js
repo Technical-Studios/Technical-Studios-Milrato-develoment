@@ -9,7 +9,7 @@ const playermanager = require(`../../handlers/playermanager`);
 const { handlemsg } = require(`${process.cwd()}/handlers/functions`);
     module.exports = {
   name: `playskipsc`,
-  category: `🎶 Music`,
+  category: `🎶Music`,
   aliases: [`pssc`, `playskipsoundcloud`],
   description: `Plays a song instantly from soundcloud, which means skips current track and plays next song`,
   usage: `playskipsc <Song / URL>`,

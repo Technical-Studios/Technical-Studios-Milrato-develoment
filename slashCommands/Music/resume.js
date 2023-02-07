@@ -11,7 +11,7 @@ const {
 const { handlemsg } = require(`${process.cwd()}/handlers/functions`);
     module.exports = {
   name: `resume`,
-  category: `🎶 Music`,
+  category: `🎶Music`,
   aliases: [`r`],
   description: `Resumes the Current paused Song`,
   usage: `resume`,

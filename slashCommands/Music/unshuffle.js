@@ -7,7 +7,7 @@ const emoji = require(`${process.cwd()}/botconfig/emojis.json`);
 const { handlemsg } = require(`${process.cwd()}/handlers/functions`);
     module.exports = {
   name: `unshuffle`,
-  category: `🎶 Music`,
+  category: `🎶Music`,
   aliases: [`unmix`, `oldshuffle`, `undoshuffle`, `oldqueue`, `us`],
   description: `Unshuffles the Queue - Restores the old Queue`,
   usage: `unshuffle`,

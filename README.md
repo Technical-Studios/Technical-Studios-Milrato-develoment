@@ -5,6 +5,10 @@
 
 Nuestro [**Servidor**](https://teamarcades.xyz/discord) de Discord nos dedicamos a codificar y publicar nuevos codigos fuentes [únase al servidor de Discord](https://teamarcades.xyz/discord) para obtener un Bot personalizado o tambien una pagina web totalmente Gratis.
 
+# 👍 Dashboard
+
+**NOTA:** Fue agregada una **Dashboard** usando un ejemplo la de **Musicium**, a medida del tiempo se agregaran mas cosas y configuraciones para que fuedad administrar el bot desde la **Dashboard**
+
 # 📑 Traducion
 
 **NOTA:** Para las personas que quieren **traducir** este bot al 100% les e ayudó con un 50% si se puede decir, en **[`languages/sp.json`](./languages/sp.json)** esta el 90% **Traducido al Español** usando el **Traductor** de **Google** ya que pueden ver errores de ortografía y de textos, esto ustedes lo pueden solucionar solo se que fue de gran ayuda traducir +5000 lineas para este codigo!)

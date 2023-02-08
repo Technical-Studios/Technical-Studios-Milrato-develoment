@@ -33,7 +33,7 @@
               .forEach(guild => {
               %>
                 <div class="card text-white bg-dark mb-3">
-                <%- guild.icon ? `<img src="https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}" class="card-img-top" style="max-width: 250px;width: 250px;">` : `<img src="https://cdn.discordapp.com/attachments/765919453766352916/877787616974622770/wCfHtuoejLIbAAAAABJRU5ErkJggg.png" class="card-img-top" style="max-width: 250px;width: 250px;">` %>
+                <%- guild.icon ? `<img src="https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}" class="card-img-top" style="max-width: 250px;width: 250px;">` : `<img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" class="card-img-top" style="max-width: 250px;width: 250px;">` %>
                   <div class="card-img-overlay text-grey h-100 d-flex flex-column justify-content-end" style="background:#000000b0;max-width: 250px;width: 250px;">
                     <h5 class="card-title text-primary" style="font-size: 25px;"><%= guild.name %></h5>
                     <% if (botClient.guilds.cache.get(guild.id)) { %>

@@ -130,4 +130,4 @@ Nuestro [**Servidor**](https://teamarcades.xyz/discord) de Discord nos dedicamos
 # Créditos
 
 > Si consideras usar este Bot, ¡asegúrate de darme crédito!
-> Ejemplo: `Bot creado por [Milrato](https://discord.gg/milrato) pero modificado por [modificador/tu nombre](https://discord.gg/)`
+> Ejemplo: `Bot creado por [Tomato#6966](https://discord.gg/milrato) pero modificado por [modificador/tu nombre](https://discord.gg/)`
